@@ -1,0 +1,594 @@
+{{ 'jquery.js' | asset_url | script_tag }}
+
+<link rel="stylesheet" href="{{ 'shopc-style.css' | asset_url }}">
+
+{% liquid
+  assign laptop_padding_top = section.settings.laptop_top
+  assign laptop_padding_bottom = section.settings.laptop_bottom
+  assign mobail_padding_top = section.settings.mobail_top
+  assign mobail_padding_bottom = section.settings.mobail_bottom
+  assign bgcolor = section.settings.bgcolor
+  assign border_color = section.settings.border_color
+  assign border_style = section.settings.border_style
+  assign border_width = section.settings.border_width
+%}
+
+<style>
+  .id_{{ section.id}}{
+    background-color: {{bgcolor}};
+  }
+
+  .id_{{ section.id}} .container{
+      border-color:{{border_color}};
+      border-width:{{border_width}};
+      border-style:{{border_style}};
+      padding-top:{{laptop_padding_top}}px;
+      padding-bottom:{{laptop_padding_bottom}}px;
+      box-sizing: border-box;
+  }
+
+   .id_{{ section.id}} .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin:-{{section.settings.laptop_gap}}px;
+     align-items:center;
+   }
+     .id_{{ section.id}} .container .row .col{
+     max-width:50%;
+    width:100%;
+     box-sizing: border-box;
+    padding:{{section.settings.laptop_gap}}px;
+   }
+.id_{{ section.id}} .container .row .col.flex{
+      display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+  .id_{{ section.id}} .list_div .poient{
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 10px 15px 0px 0px;
+    border-radius: 100%;
+    position: relative;
+  }
+  .id_{{ section.id}} .list_div .poient::after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    
+  }
+ .id_{{ section.id}} .list_div .content{
+  width: calc(100% - 35px);
+   
+ }
+
+
+  .id_{{ section.id}} h3.title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0px 0px 5px 0px;
+    color:#000;
+}
+  .id_{{ section.id}} .des {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+
+
+  @media(max-width:767px){
+      .id_{{ section.id}}{
+            padding-left:20px;
+       padding-right:20px;
+      }
+    .id_{{ section.id}} .container{
+      padding-top:{{mobail_padding_top}}px;
+      padding-bottom:{{mobail_padding_bottom}}px;
+    }
+       .id_{{ section.id}} .container .row{
+      margin:-{{section.settings.mobail_gap}}px;
+   }
+     .id_{{ section.id}} .container .row .col{
+     max-width:100%;
+    padding:{{section.settings.mobail_gap}}px;
+   }
+    
+      .id_{{ section.id}} .list_div .poient{
+    width: 16px;
+    height: 16px;
+        margin:5px 10px 0px 0px;
+  }
+  .id_{{ section.id}} .list_div .poient::after{
+  width: 6px;
+  height: 6px; 
+  }
+ .id_{{ section.id}} .list_div .content{
+  width: calc(100% - 28px);
+   
+ }
+
+
+  .id_{{ section.id}} h3.title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0px 0px 5px 0px;
+    color:#000;
+}
+  .id_{{ section.id}} .des {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+  }
+</style>
+
+<section class="id_{{ section.id }}">
+  <div class="container">
+       <div class="row">
+        <div  class="col flex">
+        {% for block in section.blocks %}
+          {% case block.type %}
+           {% when 'list' %}
+            <style>
+              .{{ block.id }} .poient{
+                 background: {{block.settings.color}};
+              }
+            </style>
+            <div class="list_div {{ block.id }} flex">
+              <div class="poient"></div>
+              <div class="content">
+                <h3 class="title">{{ block.settings.title }}</h3>
+                <div class="des">{{ block.settings.des }}</div>
+              </div>
+            </div>
+
+         {% endcase %}
+      {% endfor %} 
+
+          
+        </div>
+        <div  class="col">
+
+        {% for block in section.blocks %}
+          {% case block.type %}
+          {% when 'video' %}
+            <style>
+              img.{{ block.id }}{
+                 aspect-ratio: {{block.settings.aspect_ratio}};
+                 object-fit: {{block.settings.object_fit}};
+                width:{{block.settings.width}};
+                margin:0px auto;
+                box-shadow: 10px 6px 0 3px {{block.settings.border_color}};
+                border: 2px solid {{block.settings.border_color}};
+                border-radius: 20px;
+              }
+
+              .id_{{ section.id }} .video_image_div{
+                position: relative;
+                cursor: pointer;
+              }
+              .id_{{ section.id }} .video_image_div svg{
+                  width: 100px;
+                  height: 100px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                 transform: translate(-50%, -50%);
+              }
+              @media(max-width:767px){
+                img.{{ block.id }}{
+                 width:{{block.settings.mwidth}};
+              } 
+
+             .id_{{ section.id }} .video_image_div svg{
+                  width: 60px;
+                  height: 60px;
+              }
+              }
+            </style>
+            
+              {% if block.settings.img != blank %}
+                <div class="video_image_div">
+                <img class="{{ block.id }} image-tag"
+                  src="{{ block.settings.img | image_url }}"
+                  alt="{{ block.settings.img.alt }}"
+                  width="100"
+                  height="100"
+                >
+
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="{{ block.settings.icon_color }}" version="1.1" id="Capa_1" width="800px" height="800px" viewBox="0 0 408.221 408.221" xml:space="preserve" style="&#10;    /* color: aquamarine; */&#10;"> <g> <g> <path d="M204.11,0C91.388,0,0,91.388,0,204.111c0,112.725,91.388,204.11,204.11,204.11c112.729,0,204.11-91.385,204.11-204.11    C408.221,91.388,316.839,0,204.11,0z M286.547,229.971l-126.368,72.471c-17.003,9.75-30.781,1.763-30.781-17.834V140.012    c0-19.602,13.777-27.575,30.781-17.827l126.368,72.466C303.551,204.403,303.551,220.217,286.547,229.971z"/> </g> </g> </svg>
+
+                </div>
+                {% endif %}
+          {% endcase %}
+      {% endfor %}   
+        </div> 
+       </div>
+  </div>
+</section>
+
+
+<style>
+.video_div{{ section.id }}{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000bf;
+    top: 0;
+    z-index: 999;
+}
+
+</style>
+    <div class="video_div{{ section.id }} main_video-div">
+    
+        {% for block in section.blocks %}
+                                
+        {%liquid  
+            assign video_url =  block.settings.video_url
+            assign video =  block.settings.video
+            assign enable_video_looping =  block.settings.enable_video_looping
+          assign video_id = block.settings.video.id | default: block.settings.video_url.id
+          %}
+          {% case block.type %}
+              {% when 'video' %}
+
+            <style>
+              .{{ block.id }} video, .{{ block.id }} iframe{
+                 {{block.settings.style}}
+              }
+             .{{ block.id }}.video-div{
+                 width: 100%;
+                 height: 100vh;
+                 display: flex;
+                align-items: center;
+               cursor: pointer;
+                 }
+              @media(max-width:767px){
+        .{{ block.id }} video, .{{ block.id }} iframe{
+               {{block.settings.mobail_style}}
+               
+              }  
+              }
+            
+            </style>
+            <div class="{{ block.id }} video-div">
+              {%- if video == null and video_url != null -%}
+                {%- liquid
+                  assign loop = ''
+                  if enable_video_looping
+                    assign loop = '&loop=1&playlist=' | append: video_id
+                  endif
+                -%}
+                {%- if video_url.type == 'youtube' -%}
+                  <iframe
+                    src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+                    class="js-youtube"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    title="{{ content | escape }}"
+                  ></iframe>
+                {%- else -%}
+                  <iframe
+                    src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
+                    class="js-vimeo"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    title="{{ content | escape }}"
+                  ></iframe>
+                {%- endif -%}
+              {%- else -%}
+                {{
+                  block.settings.video
+                  | video_tag:
+                    image_size: '1100x',
+                    autoplay: true,
+                    loop: enable_video_looping,
+                    controls: true,
+                    muted: false
+                }}
+              {%- endif -%}
+            </div>
+          {% endcase %}
+      {% endfor %} 
+
+</div>
+
+<style>
+  .video_div{{ section.id }}.main_video-div, .video_div{{ section.id }}.main_video-div video, .video_div{{ section.id }}.main_video-div iframe{
+              
+   display:none;
+  }
+  
+.video_div{{ section.id }}.main_video-div.active, .video_div{{ section.id }}.main_video-div.active video, .video_div{{ section.id }}.main_video-div.active iframe{
+  display:block;
+}
+  
+</style>
+
+<script>
+   $(".video_image_div").click(function(){
+  $(".main_video-div").addClass("active");
+});
+
+  $(".video-div").click(function(){
+  $(".main_video-div").removeClass("active");
+});
+
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "Shopc  Video Section",
+    "settings": [
+      
+      {
+  "type": "color",
+   "label": "Background Color",
+   "id": "bgcolor"
+ },
+ {
+   "type": "header",
+   "content": "Laptop Padding"
+ },
+
+ {
+       "type": "range",
+          "id": "laptop_top",
+          "label": "Top",
+          "min":0,
+          "max":150,
+          "step": 2,
+        "unit": "px",
+        "default":112
+      },
+      {
+       "type": "range",
+          "id": "laptop_bottom",
+          "label": "Bottom",
+          "min":0,
+          "max":150,
+        "unit": "px",
+          "default":112,
+          "step": 2
+      },
+      {
+       "type": "range",
+          "id": "laptop_gap",
+          "label": "Gap",
+          "min":0,
+          "max":80,
+        "unit": "px",
+          "default":20,
+          "step": 1
+      },
+
+       {
+        "type": "header",
+        "content": "Mobail Padding"
+      },
+      {
+       "type": "range",
+          "id": "mobail_top",
+          "label": "Top",
+          "min":0,
+          "max":80,
+          "step": 1,
+        "unit": "px",
+        "default":64
+      },
+      {
+       "type": "range",
+          "id": "mobail_bottom",
+          "label": "Bottom",
+          "min":0,
+          "max":80,
+        "unit": "px",
+          "default":64,
+          "step": 1
+      },
+        {
+       "type": "range",
+          "id": "mobail_gap",
+          "label": "Gap",
+          "min":0,
+          "max":80,
+        "unit": "px",
+          "default":20,
+          "step": 1
+      },
+      {
+        "type": "header",
+        "content": "Border Style"
+      },
+      {
+        "type": "text",
+        "id": "border_width",
+        "label": "Border Width ( 1px 0px 1px 0px)",
+        "default":"0"
+      },
+      {
+        "type": "color",
+        "id": "border_color",
+        "default": "#d9d9d9",
+        "label": "Border Color"
+      },
+      {
+        "type": "select",
+         "id": "border_style",
+            "label": "Border Style",
+            "default": "solid",
+            "options": [
+              {
+                "label": "Solid",
+                "value": "solid"
+              },
+              {
+                "value": "dotted",
+                "label": "Dotted"
+              },
+              {
+                "label": "Dashed",
+                "value": "dashed"
+              },
+              {
+                "label": "Double",
+                "value": "double"
+              }
+            ]
+          }
+    ],
+    "blocks": [ 
+       {
+        "type":"video",
+        "name":"Video",
+         "limit": 1,
+        "settings": [
+          
+            {
+              "type": "video_url",
+              "id": "video_url",
+              "accept": ["youtube", "vimeo"],
+              "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+              "label": "t:sections.video.settings.video_url.label",
+              "info": "t:sections.video.settings.video_url.info"
+            },
+            {
+            "type": "video",
+            "id": "video",
+            "label": "t:sections.video.settings.video.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_video_looping",
+            "label": "t:sections.video.settings.enable_video_looping.label",
+            "default": false
+          },
+            
+      {
+      "type": "textarea",
+      "id": "style",
+      "label": "Video Style CSS"
+    },
+      {
+      "type": "textarea",
+      "id": "mobail_style",
+      "label": "Mobail Video Style CSS"
+    },
+      {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Select Image"
+    },
+    {
+      "type": "text",
+      "id": "width",
+      "label": "Image Width+(px/%)"
+    },
+     {
+      "type": "text",
+      "id": "mwidth",
+      "label": "Mobail Image Width+(px/%)"
+    },
+    {
+        "type": "range",
+          "id": "mmargin_bottom",
+          "label": "Mobail Margin Bottom",
+          "min":0,
+          "max":50,
+           "unit": "px",
+          "default":0,
+          "step": 1
+    },
+    {
+      "type": "text",
+      "id": "aspect_ratio",
+      "label": "Aspect Ratio(1/1)"
+    },
+       {
+        "type": "select",
+         "id": "object_fit",
+            "label": "Object fit",
+            "options": [
+              {
+                "label": "fill",
+                "value": "fill"
+              },
+              {
+                "label": "cover",
+                "value": "cover"
+              },
+              {
+                "value": "contain",
+                "label": "contain"
+              }
+            ],
+              "default": "fill"
+          },
+          {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border Color",
+             "default":"#000000"
+          },
+          {
+            "type": "color",
+            "id": "icon_color",
+            "label": "Icon Color",
+             "default":"#ffffff"
+          }
+        ]
+       },
+      {
+         "type": "list",
+         "name": "List",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default":"Integrate"
+          },
+          {
+            "type": "text",
+            "id": "des",
+            "label": "Description",
+            "default":"Get AI-powered analysis of customer data to discover new, valuable audience groups."
+          },
+          {
+        "type": "color",
+         "id": "color",
+         "label": "Pointer Color",
+          "default":"#000000"
+        }
+          
+        ]
+      }
+      
+    ],
+    "presets": [
+      {
+          "name": "Shopc  Video Section"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,1248 @@
+{{ 'jquery.js' | asset_url | script_tag }}
+
+<link rel="stylesheet" href="{{ 'shopc-style.css' | asset_url }}">
+
+{% liquid
+  assign laptop_padding_top = section.settings.laptop_top
+  assign laptop_padding_bottom = section.settings.laptop_bottom
+  assign mobail_padding_top = section.settings.mobail_top
+  assign mobail_padding_bottom = section.settings.mobail_bottom
+  assign bgcolor = section.settings.bgcolor
+  assign border_color = section.settings.border_color
+  assign border_style = section.settings.border_style
+  assign border_width = section.settings.border_width
+%}
+
+<style>
+  .id_{{ section.id}}{
+    background-color: {{bgcolor}};
+    position: relative;
+  }
+
+  .id_{{ section.id}} .container{
+      border-color:{{border_color}};
+      border-width:{{border_width}};
+      border-style:{{border_style}};
+      padding-top:{{laptop_padding_top}}px;
+      padding-bottom:{{laptop_padding_bottom}}px;
+      box-sizing: border-box;
+  }
+
+
+
+
+  @media(max-width:767px){
+      .id_{{ section.id}}{
+            padding-left:20px;
+       padding-right:20px;
+      }
+    .id_{{ section.id}} .container{
+      padding-top:{{mobail_padding_top}}px;
+      padding-bottom:{{mobail_padding_bottom}}px;
+    }
+
+
+  }
+</style>
+
+<section class="id_{{ section.id }}">
+  <div class="container">
+        {% for block in section.blocks %}
+          {% case block.type %}
+                {% when 'title' %}
+              <style>
+                .{{block.id}}.title{
+                  font-size:{{block.settings.font_size}}px;
+                  font-weight:{{block.settings.font_weight}};
+                  line-height:{{block.settings.line_height}}px;
+                  color:{{block.settings.textcolor}};
+                  margin-bottom:{{block.settings.margin_bottom}}px !important;
+                  text-align: {{block.settings.text_align}};
+                  width:{{block.settings.width}}%;
+                  margin:{{block.settings.align_content}}
+                }
+                 @media(max-width:767px){
+                 .{{block.id}}.title{
+                  font-size:{{block.settings.mobail_font_size}}px;
+                  line-height:{{block.settings.mobail_line_height}}px;
+                  margin-bottom:{{block.settings.mobail_margin_bottom}}px !important;
+                  text-align: {{block.settings.mobail_text_align}};
+                  width:{{block.settings.mobail_width}}%;
+                  margin:{{block.settings.mobail_align_content}}
+                }
+                 }
+              </style>
+
+              <h3 class="title {{ block.id }}">{{ block.settings.title }}</h3>
+              {% when 'richtext' %}
+              <style>
+                 .{{block.id}}{
+                   font-size:{{block.settings.font_size}}px;
+                   font-weight:{{block.settings.font_weight}};
+                   line-height:{{block.settings.line_height}}px;
+                   color:{{block.settings.textcolor}};
+                   margin-bottom:{{block.settings.margin_bottom}}px !important;
+                  text-align: {{block.settings.text_align}};
+                  width:{{block.settings.width}}%;
+                  margin:{{block.settings.align_content}}
+                 }
+                    .{{block.id}} ul{
+                             padding-inline-start: 0;
+                       margin-block: 0;
+                       }
+                       .{{block.id}} ul li{
+                          list-style: none;
+                         margin-bottom:10px;
+                          display: flex;
+                       }
+                 .{{block.id}} ul li::before{
+
+                   content: "\2713";
+                   font-size:{{block.settings.font_size}}px;
+                   font-weight:{{block.settings.font_weight}};
+                   margin-right: 10px;
+
+
+                   }
+                  @media(max-width:767px){
+                  .{{block.id}}{
+                   font-size:{{block.settings.mobail_font_size}}px;
+                   line-height:{{block.settings.mobail_line_height}}px;
+                   margin-bottom:{{block.settings.mobail_margin_bottom}}px !important;
+                  text-align: {{block.settings.mobail_text_align}};
+                  width:{{block.settings.mobail_width}}%;
+                  margin:{{block.settings.mobail_align_content}}
+                 }
+                .{{block.id}} ul li::before{
+                      font-size:{{block.settings.mobail_font_size}}px;
+                     }
+                  }
+              </style>
+              <div class="{{ block.id }}">{{ block.settings.text }}</div>
+                       {% when 'button' %}
+              <style>
+                .{{block.id}} .btn{
+                  font-size:{{block.settings.font_size}}px;
+                  font-weight:{{block.settings.font_weight}};
+                  line-height:{{block.settings.font_size}}px;
+                  color:{{block.settings.text_color}};
+                  border-color:{{block.settings.border_color}};
+                  border-width:{{block.settings.border_width}}px;
+                  border-style:{{block.settings.border_style}};
+                  border-radius:{{block.settings.border_radius}}px;
+                  background-color: {{block.settings.btn_color}};
+                  margin-bottom:{{block.settings.margin_bottom}}px;
+                  padding:{{block.settings.padding}};
+                }
+                 .{{block.id}} .btn:hover{
+                    background-color: {{block.settings.btn_color_hover}};
+                    color:{{block.settings.text_color_hover}};
+                    border-color:{{block.settings.border_color_hover}};
+                 }
+                 .{{block.id}}{
+                    text-align: {{block.settings.text_align}};
+                 }
+                 @media(max-width:767px){
+                 .{{block.id}} .btn{
+                  font-size:{{block.settings.mobail_font_size}}px;
+                  line-height:{{block.settings.mobail_font_size}}px;
+                  margin-bottom:{{block.settings.mobail_margin_bottom}}px;
+                  padding:{{block.settings.mobail_padding}};
+                }
+                .{{block.id}}{
+                    text-align: {{block.settings.mobail_text_align}};
+                 }
+                 }
+              </style>
+
+              {% if block.settings.btnlink != blank %}
+                <div class="{{ block.id }}">
+                <a class="btn" href="{{ block.settings.btnlink }}">{{ block.settings.btntext }}</a>
+                </div>
+              {% endif %}
+          {% endcase %}
+      {% endfor %} 
+    
+   </div>
+
+        {% for block in section.blocks %}
+          {% case block.type %}
+                {% when 'scroll_img' %}
+            <style>
+              .id_{{ section.id}}{
+                   height:300vh;
+                 }
+             .id_{{ section.id}} .container{
+                 position: sticky !important;
+                 overflow: hidden !important;
+                 height: 100vh !important;
+                 position: -webkit-sticky !important;
+                 top: 0 !important;
+                 z-index:2;
+                   display: flex;
+                   flex-direction: column;
+              justify-content: center;
+               }
+             .{{block.id}}{
+                position: absolute;
+                 top: 0;
+                height: 100%;
+              width: 100%;
+              box-sizing: border-box;
+                left: 0;
+               }
+
+              .{{block.id}} .scroll_img_box{
+                  position: sticky !important;
+                 overflow: hidden !important;
+                 height: 100vh !important;
+                 position: -webkit-sticky !important;
+                 top: 0 !important;
+                 max-width:90% !important;
+                 width:100%;
+                margin:0px auto;
+                 box-sizing: border-box;
+              }
+              
+              .{{block.id}} img{
+                width:22vw;
+                position: absolute;
+                will-change: transform;
+                transition: all 1s cubic-bezier(0, 0, 0.07, 1.01);
+                transform-style: preserve-3d;
+              }
+              
+              
+             .{{block.id}} .left_1{
+                left:0;
+                 padding-top: 70vh;
+                z-index:2;
+              }
+              .{{block.id}} .left_2{
+                left:10vw;
+                 opacity: .8;
+                 padding-top: 80vh;
+                z-index:1;
+                
+              }
+              .{{block.id}} .left_3{
+               left:5vw;
+                z-index:2;
+                padding-top: 180vh;
+              }
+              .{{block.id}} .right_1{
+                right:0;
+                padding-top: 72vh;
+              }
+              .{{block.id}} .right_2{
+                right:12vw;
+                 opacity: .8;
+                padding-top: 90vh;
+              }
+            .{{block.id}} .right_3{
+               right:4vw;
+               padding-top: 180vh;
+              }
+
+              @media(max-width:767px){
+                
+              .{{block.id}} img{
+                width:40vw;
+              }
+              
+              
+             .{{block.id}} .left_1{
+                left:0;
+                 padding-top: 70vh;
+                z-index:2;
+              }
+              .{{block.id}} .left_2{
+                left:2vw;
+                 opacity: .8;
+                 padding-top: 80vh;
+                z-index:1;
+                
+              }
+              .{{block.id}} .left_3{
+               left:1vw;
+                z-index:2;
+                padding-top: 180vh;
+              }
+              .{{block.id}} .right_1{
+                right:0;
+                padding-top: 72vh;
+              }
+              .{{block.id}} .right_2{
+                right:1.8vw;
+                 opacity: .8;
+                padding-top: 90vh;
+              }
+                
+            .{{block.id}} .right_3{
+               right:1.2vw;
+               padding-top: 180vh;
+              }
+                
+              }
+            </style>
+            
+         <div class="scroll_img_div {{ block.id }}"> 
+           <div class="scroll_img_box"> 
+              {% if block.settings.left_1 != blank %}
+                <img
+                  class="left_1"
+                  src="{{ block.settings.left_1 | image_url }}"
+                  alt="{{ block.settings.left_1.alt }}"
+                  width="100"
+                  height="100"
+                >
+              {% endif %}
+          {% if block.settings.left_2 != blank %}
+                <img
+                  class="left_2"
+                  src="{{ block.settings.left_2 | image_url }}"
+                  alt="{{ block.settings.left_2.alt }}"
+                  width="100"
+                  height="100"
+                >
+              {% endif %}
+             {% if block.settings.left_3 != blank %}
+                <img
+                  class="left_3"
+                  src="{{ block.settings.left_3 | image_url }}"
+                  alt="{{ block.settings.left_3.alt }}"
+                  width="100"
+                  height="100"
+                >
+              {% endif %}
+             {% if block.settings.right_1 != blank %}
+                <img
+                  class="right_1"
+                  src="{{ block.settings.right_1 | image_url }}"
+                  alt="{{ block.settings.right_1.alt }}"
+                  width="100"
+                  height="100"
+                >
+              {% endif %}
+                {% if block.settings.right_2 != blank %}
+                <img
+                  class="right_2"
+                  src="{{ block.settings.right_2 | image_url }}"
+                  alt="{{ block.settings.right_2.alt }}"
+                  width="100"
+                  height="100"
+                >
+              {% endif %}
+                {% if block.settings.right_3 != blank %}
+                <img
+                  class="right_3"
+                  src="{{ block.settings.right_3 | image_url }}"
+                  alt="{{ block.settings.right_3.alt }}"
+                  width="100"
+                  height="100"
+                >
+              {% endif %}
+                        
+                      </div>
+</div>
+          {% endcase %}
+      {% endfor %} 
+
+
+
+</section>
+
+
+
+<script>               
+$(window).bind('scroll',function(e){
+    parallaxScroll();
+});
+
+function parallaxScroll(){
+   var scrolled = $(window).scrollTop(); 
+   $('.left_1').css('transform',"translate3d(0px,"+(0-(scrolled/15))+'%, 0px) scale3d(1, 1, 1)');
+   $('.left_2').css('transform',"translate3d(0px,"+(0-(scrolled/30))+'%, 0px) scale3d(1, 1, 1)');
+   $('.left_3').css('transform',"translate3d(0px,"+(0-(scrolled/25))+'%, 0px) scale3d(1, 1, 1)');
+     $('.right_1').css('transform',"translate3d(0px,"+(0-(scrolled/16))+'%, 0px) scale3d(1, 1, 1)');
+   $('.right_2').css('transform',"translate3d(0px,"+(0-(scrolled/32))+'%, 0px) scale3d(1, 1, 1)');
+   $('.right_3').css('transform',"translate3d(0px,"+(0-(scrolled/27))+'%, 0px) scale3d(1, 1, 1)');
+   
+}
+</script>  
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Shopc Hero Banner",
+    "settings": [
+    {
+  "type": "text",
+   "label": "Section Height",
+   "id": "section_height"
+ },
+      
+      {
+  "type": "color",
+   "label": "Background Color",
+   "id": "bgcolor"
+ },
+ {
+   "type": "header",
+   "content": "Laptop Padding"
+ },
+
+ {
+       "type": "range",
+          "id": "laptop_top",
+          "label": "Top",
+          "min":0,
+          "max":150,
+          "step": 2,
+        "unit": "px",
+        "default":112
+      },
+      {
+       "type": "range",
+          "id": "laptop_bottom",
+          "label": "Bottom",
+          "min":0,
+          "max":150,
+        "unit": "px",
+          "default":112,
+          "step": 2
+      },
+
+       {
+        "type": "header",
+        "content": "Mobail Padding"
+      },
+      {
+       "type": "range",
+          "id": "mobail_top",
+          "label": "Top",
+          "min":0,
+          "max":80,
+          "step": 1,
+        "unit": "px",
+        "default":64
+      },
+      {
+       "type": "range",
+          "id": "mobail_bottom",
+          "label": "Bottom",
+          "min":0,
+          "max":80,
+        "unit": "px",
+          "default":64,
+          "step": 1
+      },
+      {
+        "type": "header",
+        "content": "Border Style"
+      },
+      {
+        "type": "text",
+        "id": "border_width",
+        "label": "Border Width ( 1px 0px 1px 0px)",
+        "default":"0"
+      },
+      {
+        "type": "color",
+        "id": "border_color",
+        "default": "#d9d9d9",
+        "label": "Border Color"
+      },
+      {
+        "type": "select",
+         "id": "border_style",
+            "label": "Border Style",
+            "default": "solid",
+            "options": [
+              {
+                "label": "Solid",
+                "value": "solid"
+              },
+              {
+                "value": "dotted",
+                "label": "Dotted"
+              },
+              {
+                "label": "Dashed",
+                "value": "dashed"
+              },
+              {
+                "label": "Double",
+                "value": "double"
+              }
+            ]
+          }
+    ],
+    "blocks": [ 
+      {
+  "type": "title",
+  "name": "Title",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default":"The ShopLandingAI Solution"
+    },
+    {
+      "type": "color",
+      "id": "textcolor",
+      "label": "Color",
+      "default":"#000000"
+    },
+     {
+   "type": "header",
+   "content": "Laptop Typography"
+    },
+     {
+        "type": "select",
+         "id": "text_align",
+            "label": "Text Align",
+            "default": "left",
+            "options": [
+              {
+                "label": "left",
+                "value": "left"
+              },
+              {
+                "value": "center",
+                "label": "center"
+              },
+              {
+                "label": "right",
+                "value": "right"
+              }
+            ]
+          },
+        {
+       "type": "range",
+          "id": "width",
+          "label": "Width",
+          "min":0,
+          "max":100,
+          "unit": "%",
+          "default":100,
+          "step": 1
+      },     {
+        "type": "select",
+         "id": "align_content",
+            "label": "Align Content",
+            "default": "0px auto 0px 0px",
+            "options": [
+              {
+                "label": "left",
+                "value": "0px auto 0px 0px"
+              },
+              {
+                "value": "0px auto",
+                "label": "center"
+              },
+              {
+                "label": "right",
+                "value": "0px 0px 0px auto"
+              }
+            ]
+          },
+    {
+       "type": "range",
+          "id": "font_size",
+          "label": "Font Size",
+          "min":0,
+          "max":100,
+        "unit": "px",
+          "default":50,
+          "step": 1
+      },
+        {
+       "type": "range",
+          "id": "line_height",
+          "label": "Line Height",
+          "min":0,
+          "max":100,
+        "unit": "px",
+          "default":60,
+          "step": 1
+      },
+
+    {
+        "type": "select",
+         "id": "font_weight",
+            "label": "Font Weight",
+            "default": "500",
+            "options": [
+              {
+                "label": "100",
+                "value": "100"
+              },
+              {
+                "value": "200",
+                "label": "200"
+              },
+                {
+                "label": "300",
+                "value": "300"
+              },
+              {
+                "value": "400",
+                "label": "400"
+              },
+                  {
+                "label": "500",
+                "value": "500"
+              },
+              {
+                "value": "600",
+                "label": "600"
+              },
+              {
+                "label": "700",
+                "value": "700"
+              },
+              {
+                "label": "800",
+                "value": "800"
+              },
+               {
+                "label": "900",
+                "value": "900"
+              },
+               {
+                "label": "Bold",
+                "value": "bold"
+              }
+            ]
+          },
+          {
+        "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "min":0,
+          "max":100,
+           "unit": "px",
+          "default":8,
+          "step": 1
+    },
+         {
+   "type": "header",
+   "content": "Mobail Typography"
+    },
+    {
+        "type": "select",
+         "id": "mobail_text_align",
+            "label": "Text Align",
+            "default": "left",
+            "options": [
+              {
+                "label": "left",
+                "value": "left"
+              },
+              {
+                "value": "center",
+                "label": "center"
+              },
+              {
+                "label": "right",
+                "value": "right"
+              }
+            ]
+          },
+        {
+       "type": "range",
+          "id": "mobail_width",
+          "label": "Width",
+          "min":0,
+          "max":100,
+          "unit": "%",
+          "default":100,
+          "step": 1
+      },     {
+        "type": "select",
+         "id": "mobail_align_content",
+            "label": "Align Content",
+            "default": "0px auto 0px 0px",
+            "options": [
+              {
+                "label": "left",
+                "value": "0px auto 0px 0px"
+              },
+              {
+                "value": "0px auto",
+                "label": "center"
+              },
+              {
+                "label": "right",
+                "value": "0px 0px 0px auto"
+              }
+            ]
+          },
+    {
+       "type": "range",
+          "id": "mobail_font_size",
+          "label": "Font Size",
+          "min":0,
+          "max":100,
+        "unit": "px",
+          "default":29,
+          "step": 1
+      },
+        {
+       "type": "range",
+          "id": "mobail_line_height",
+          "label": "Line Height",
+          "min":0,
+          "max":100,
+        "unit": "px",
+          "default":40,
+          "step": 1
+      },
+          {
+        "type": "range",
+          "id": "mobail_margin_bottom",
+          "label": "Margin Bottom",
+          "min":0,
+          "max":100,
+           "unit": "px",
+          "default":8,
+          "step": 1
+    }
+  ]
+},
+{
+  "type": "richtext",
+  "name":"Rich Text",
+  "settings": [
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "text"
+    },
+     {
+      "type": "color",
+      "id": "textcolor",
+      "label": "Color",
+      "default":"#000000"
+    },
+     {
+   "type": "header",
+   "content": "Laptop Typography"
+    },     {
+        "type": "select",
+         "id": "text_align",
+            "label": "Text Align",
+            "default": "left",
+            "options": [
+              {
+                "label": "left",
+                "value": "left"
+              },
+              {
+                "value": "center",
+                "label": "center"
+              },
+              {
+                "label": "right",
+                "value": "right"
+              }
+            ]
+          },
+        {
+       "type": "range",
+          "id": "width",
+          "label": "Width",
+          "min":0,
+          "max":100,
+          "unit": "%",
+          "default":100,
+          "step": 1
+      },     {
+        "type": "select",
+         "id": "align_content",
+            "label": "Align Content",
+            "default": "0px auto 0px 0px",
+            "options": [
+              {
+                "label": "left",
+                "value": "0px auto 0px 0px"
+              },
+              {
+                "value": "0px auto",
+                "label": "center"
+              },
+              {
+                "label": "right",
+                "value": "0px 0px 0px auto"
+              }
+            ]
+          },
+    {
+       "type": "range",
+          "id": "font_size",
+          "label": "Font Size",
+          "min":0,
+          "max":30,
+        "unit": "px",
+          "default":18,
+          "step": 1
+      },
+        {
+       "type": "range",
+          "id": "line_height",
+          "label": "Line Height",
+          "min":0,
+          "max":50,
+        "unit": "px",
+          "default":27,
+          "step": 1
+      },
+
+    {
+        "type": "select",
+         "id": "font_weight",
+            "label": "Font Weight",
+            "default": "400",
+            "options": [
+              {
+                "label": "100",
+                "value": "100"
+              },
+              {
+                "value": "200",
+                "label": "200"
+              },
+                {
+                "label": "300",
+                "value": "300"
+              },
+              {
+                "value": "400",
+                "label": "400"
+              },
+                  {
+                "label": "500",
+                "value": "500"
+              },
+              {
+                "value": "600",
+                "label": "600"
+              },
+              {
+                "label": "700",
+                "value": "700"
+              },
+              {
+                "label": "800",
+                "value": "800"
+              },
+               {
+                "label": "900",
+                "value": "900"
+              },
+               {
+                "label": "Bold",
+                "value": "bold"
+              }
+            ]
+          },
+          {
+        "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "min":0,
+          "max":100,
+           "unit": "px",
+          "default":20,
+          "step": 1
+    },
+         {
+   "type": "header",
+   "content": "Mobail Typography"
+    },     {
+        "type": "select",
+         "id": "mobail_text_align",
+            "label": "Text Align",
+            "default": "left",
+            "options": [
+              {
+                "label": "left",
+                "value": "left"
+              },
+              {
+                "value": "center",
+                "label": "center"
+              },
+              {
+                "label": "right",
+                "value": "right"
+              }
+            ]
+          },
+        {
+       "type": "range",
+          "id": "mobail_width",
+          "label": "Width",
+          "min":0,
+          "max":100,
+          "unit": "%",
+          "default":100,
+          "step": 1
+      },     {
+        "type": "select",
+         "id": "mobail_align_content",
+            "label": "Align Content",
+            "default": "0px auto 0px 0px",
+            "options": [
+              {
+                "label": "left",
+                "value": "0px auto 0px 0px"
+              },
+              {
+                "value": "0px auto",
+                "label": "center"
+              },
+              {
+                "label": "right",
+                "value": "0px 0px 0px auto"
+              }
+            ]
+          },
+    {
+       "type": "range",
+          "id": "mobail_font_size",
+          "label": "Font Size",
+          "min":0,
+          "max":30,
+        "unit": "px",
+          "default":16,
+          "step": 1
+      },
+        {
+       "type": "range",
+          "id": "mobail_line_height",
+          "label": "Line Height",
+          "min":0,
+          "max":50,
+        "unit": "px",
+          "default":24,
+          "step": 1
+      },
+          {
+        "type": "range",
+          "id": "mobail_margin_bottom",
+          "label": "Margin Bottom",
+          "min":0,
+          "max":100,
+           "unit": "px",
+          "default":20,
+          "step": 1
+    }
+  ]
+},
+  {
+  "type": "button",
+  "name": "Button",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "url",
+      "id": "btnlink",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "btntext",
+      "label": "Button Text",
+      "default":"Shop Now"
+    },
+      {
+        "type": "header",
+        "content": "Button Style"
+      },
+     {
+        "type": "select",
+         "id": "text_align",
+            "label": "Text Align",
+            "default": "left",
+            "options": [
+              {
+                "label": "left",
+                "value": "left"
+              },
+              {
+                "value": "center",
+                "label": "center"
+              },
+              {
+                "label": "right",
+                "value": "right"
+              }
+            ]
+          },
+      {
+        "type": "text",
+        "id": "padding",
+        "label": "Border Padding ( 10px 45px)",
+        "default":"10px 45px"
+      },
+        {
+       "type": "range",
+          "id": "font_size",
+          "label": "Font Size",
+          "min":0,
+          "max":50,
+        "unit": "px",
+          "default":18,
+          "step": 1
+      },
+    {
+        "type": "select",
+         "id": "font_weight",
+            "label": "Font Weight",
+            "default": "400",
+            "options": [
+              {
+                "label": "100",
+                "value": "100"
+              },
+              {
+                "value": "200",
+                "label": "200"
+              },
+                {
+                "label": "300",
+                "value": "300"
+              },
+              {
+                "value": "400",
+                "label": "400"
+              },
+                  {
+                "label": "500",
+                "value": "500"
+              },
+              {
+                "value": "600",
+                "label": "600"
+              },
+              {
+                "label": "700",
+                "value": "700"
+              },
+              {
+                "label": "800",
+                "value": "800"
+              },
+               {
+                "label": "900",
+                "value": "900"
+              },
+               {
+                "label": "Bold",
+                "value": "bold"
+              }
+            ]
+          },
+
+    {
+      "type": "range",
+      "label": "Border Width",
+        "id": "border_width",
+          "min":0,
+          "max":10,
+        "unit": "px",
+          "default":1,
+          "step": 1
+      },
+        {
+      "type": "range",
+      "label": "Border Radius",
+        "id": "border_radius",
+          "min":0,
+          "max":100,
+        "unit": "px",
+          "default":30,
+          "step": 1
+      },
+      {
+        "type": "select",
+         "id": "border_style",
+            "label": "Border Style",
+            "default": "solid",
+            "options": [
+              {
+                "label": "Solid",
+                "value": "solid"
+              },
+              {
+                "value": "dotted",
+                "label": "Dotted"
+              },
+              {
+                "label": "Dashed",
+                "value": "dashed"
+              },
+              {
+                "label": "Double",
+                "value": "double"
+              }
+            ]
+          },          {
+        "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "min":0,
+          "max":50,
+           "unit": "px",
+          "default":0,
+          "step": 1
+    },
+     {
+        "type": "header",
+        "content": "Mobail Button Style"
+      }, {
+        "type": "select",
+         "id": "mobail_text_align",
+            "label": "Text Align",
+            "default": "left",
+            "options": [
+              {
+                "label": "left",
+                "value": "left"
+              },
+              {
+                "value": "center",
+                "label": "center"
+              },
+              {
+                "label": "right",
+                "value": "right"
+              }
+            ]
+          },
+     {
+        "type": "text",
+        "id": "mobail_padding",
+        "label": "Border Width ( 10px 30px)",
+        "default":"10px 30px"
+      },
+        {
+       "type": "range",
+          "id": "mobaile_font_size",
+          "label": "Font Size",
+          "min":0,
+          "max":50,
+        "unit": "px",
+          "default":17,
+          "step": 1
+      },          {
+        "type": "range",
+          "id": "mobail_margin_bottom",
+          "label": "Margin Bottom",
+          "min":0,
+          "max":50,
+           "unit": "px",
+          "default":0,
+          "step": 1
+    },
+        {
+        "type": "header",
+        "content": "Button Color"
+      },
+               {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text Color",
+             "default":"#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "btn_color",
+            "label": "Button Color",
+             "default":"#4ea2b2"
+          },
+    {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border Color",
+             "default":"#4ea2b2"
+          },
+            {
+        "type": "header",
+        "content": "Button Hover Color"
+      },
+            {
+            "type": "color",
+            "id": "btn_text_hover",
+            "label": "Text",
+            "default":"#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "btn_color_hover",
+            "label": "Button Color",
+             "default":"#f37527"
+          },
+          {
+            "type": "color",
+            "id": "border_color_hover",
+            "label": "Border Color",
+             "default":"#f37527"
+          }
+  ]
+},
+      {
+        "type": "scroll_img",
+        "name":"Secroll Image",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "left_1",
+            "label": "Left Imge Top"
+          },
+            {
+            "type": "image_picker",
+            "id": "left_2",
+            "label": "Left Imge Middle"
+          },
+            {
+            "type": "image_picker",
+            "id": "left_3",
+            "label": "Left Imge Bottom"
+          },
+                    {
+            "type": "image_picker",
+            "id": "right_1",
+            "label": "Right Imge Top"
+          },
+            {
+            "type": "image_picker",
+            "id": "right_2",
+            "label": "Right Imge Middle"
+          },
+            {
+            "type": "image_picker",
+            "id": "right_3",
+            "label": "Right Imge Bottom"
+          }
+        ]
+      }
+
+      
+    ],
+    "presets": [
+      {
+        "name": "Shopc Hero Banner"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,249 @@
+{% liquid
+  assign logo_width = section.settings.logo_width
+  assign scrolling = section.settings.scrolling
+  assign scroll_speed = section.settings.scroll_speed
+  assign title = section.settings.title
+  assign bg = section.settings.bg
+  assign padding = section.settings.padding
+  assign textColor = section.settings.textColor
+  assign aspect_ratio = section.settings.aspect_ratio
+  assign imageradius = section.settings.imageradius
+  assign objectfit = section.settings.objectfit
+  assign justifycenter = section.settings.justifycenter
+%}
+<div class="width_div">
+  <div class="sectionTitle">
+    <h2>{{ title }}</h2>
+  </div>
+  <ul class="logos">
+    {% for block in section.blocks %}
+      {% liquid
+        assign logo = block.settings.logo
+        assign link = block.settings.url
+      %}
+
+      <li class="logo {{ block.id }}">
+        {% if link != blank %}<a href="{{ link }}" target="_blank">{% endif %}
+
+        {% if logo != blank %}
+          {{ logo | image_url: width: 1500 | image_tag: loading: 'lazy' }}
+
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+        {% if link != blank %}<a />{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+  {% javascript %}
+//var clone = document.querySelector(".logos .logo").cloneNode(true);
+//document.querySelector(".logos").appendChild(clone);
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Shopc Logos Slider",
+  "settings": [
+    {
+      "type": "text",
+      "default":"Featered in",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "min": 100,
+      "max": 400,
+      "step": 5,
+      "default":100,
+      "id": "logo_width",
+      "label": "Logo Width"
+    },
+    {
+      "type":"select",
+      "id":"aspect_ratio",
+      "label": "Aspect Ratio",
+      "options": [
+        {
+          "label": "Square",
+          "value": "1/1"
+        },
+        {
+          "label": "Till",
+          "value": "5/6"
+        },
+        {
+          "label": "",
+          "value": "6/5"
+        },
+        {
+          "label": "Auto",
+          "value": "auto"
+        }
+      ],
+      "default":"1/1"
+    },
+    {
+      "type":"select",
+      "id":"objectfit",
+      "label": "Object Fit",
+      "options": [
+        {
+          "label": "Cover",
+          "value": "cover"
+        },
+        {
+          "label": "Contain",
+          "value": "contain"
+        },
+        {
+          "label": "None",
+          "value": "unset"
+        }
+      ],
+      "default":"contain"
+    },
+    {
+      "type": "range",
+      "id": "imageradius",
+      "label": "Image Radius",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "unit": "px",
+      "default":3
+    },
+    {
+      "type": "checkbox",
+      "default":true,
+      "id": "scrolling",
+      "label": "Logo Scrolling"
+    },
+    {
+      "type": "checkbox",
+      "default":true,
+      "id": "justifycenter",
+      "label": "Center Align"
+    },
+    {
+      "type": "range",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "default":4,
+      "id": "scroll_speed",
+      "label": "Scroll S"
+    },
+    {
+      "type": "text",
+      "id": "padding",
+      "label": "Section Padding",
+      "default": "50px 0"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Section Color"
+    },
+    {
+      "type": "color",
+      "id": "textColor",
+      "label": "Text Color"
+    }
+
+  ],
+  "blocks": [
+
+      {
+        "type":"logoslider",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"
+          }
+        ]
+      }
+  ],
+  "presets": [
+    {
+      "name": "Shopc Logos Slider",
+      "blocks": [
+        {
+          "type": "logoslider"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  #shopify-section-{{ section.id }}  h2{
+     color:{{textColor}};
+  }
+  #shopify-section-{{ section.id }}{
+
+     padding: {{padding}};
+     background-color:{{bg}};
+     overflow:hidden;
+    }
+
+   #shopify-section-{{ section.id }} .width_div{  
+      width:10000px;
+   }
+  #shopify-section-{{ section.id }} .logos{
+     overflow:hidden;
+     white-space:nowrap;
+     display:flex;
+     align-items:center;
+    padding:0px;
+    margin:0px;
+    {% if justifycenter == true %}
+    justify-content: center;
+    {% endif %}
+   }
+  #shopify-section-{{ section.id }} .sectionTitle{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+  }
+  #shopify-section-{{ section.id }} .sectionTitle h2{
+    font-size:30px;
+  }
+  #shopify-section-{{ section.id }} .logos .logo{
+     {% if scrolling == true %}
+     animation: {{scroll_speed}}s slide infinite linear;
+     {% endif %}
+     width:100%;
+     max-width: {{logo_width}}px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 15px;
+   }
+
+  #shopify-section-{{ section.id }} .logos .logo img{
+    width:100%;
+     height: auto;
+    border-radius:{{imageradius}}px;
+    aspect-ratio:{{aspect_ratio}};
+    object-fit: {{objectfit}};
+
+   }
+   @keyframes slide{
+     from{
+       transform: translateX(0);
+     }
+     to{
+       transform: translateX(-100%)
+     }
+   }
+</style>

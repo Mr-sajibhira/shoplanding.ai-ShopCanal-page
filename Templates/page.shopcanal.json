@@ -1,0 +1,2155 @@
+{
+    "sections": {
+      "main": {
+        "type": "main-page",
+        "disabled": true,
+        "settings": {
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "shopc_hero_banner_fNb3Pc": {
+        "type": "shopc-hero-banner",
+        "blocks": {
+          "scroll_img_aLCp7c": {
+            "type": "scroll_img",
+            "settings": {
+              "left_1": "shopify:\/\/shop_images\/472241699419063450-6fd58ddb-0c0c-4ede-9d71-93c3322c8249.png",
+              "left_2": "shopify:\/\/shop_images\/472241699419063450-7e39db6c-fefc-4d6b-8933-5de6559f09a9.png",
+              "left_3": "shopify:\/\/shop_images\/472241699419063450-f17aebf8-4173-4312-bfc3-e0275fd7e390.png",
+              "right_1": "shopify:\/\/shop_images\/472241699419063450-6d037047-5117-40ca-9653-9a53dc434c51.png",
+              "right_2": "shopify:\/\/shop_images\/472241699419063450-e13ce297-4a8d-4311-9243-cc3b98780988.png",
+              "right_3": "shopify:\/\/shop_images\/472241699419063450-e2f56db9-b203-4aff-a024-3f2c59215761.png"
+            }
+          },
+          "title_qjC3AW": {
+            "type": "title",
+            "settings": {
+              "title": "Are You Losing Conversions?",
+              "textcolor": "#ffffff",
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 50,
+              "line_height": 60,
+              "font_weight": "500",
+              "margin_bottom": 8,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 29,
+              "mobail_line_height": 40,
+              "mobail_margin_bottom": 8
+            }
+          },
+          "title_W9FncW": {
+            "type": "title",
+            "settings": {
+              "title": "EngageAI is the Answer",
+              "textcolor": "#ffffff",
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 50,
+              "line_height": 60,
+              "font_weight": "500",
+              "margin_bottom": 8,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 29,
+              "mobail_line_height": 40,
+              "mobail_margin_bottom": 8
+            }
+          },
+          "richtext_BR9Twq": {
+            "type": "richtext",
+            "settings": {
+              "text": "<p>Personalized, interactive customer journeys from click to conversion <\/p><p>with the power of AI and A\/B testing<\/p>",
+              "textcolor": "#ffffff",
+              "text_align": "center",
+              "width": 61,
+              "align_content": "0px auto",
+              "font_size": 18,
+              "line_height": 27,
+              "font_weight": "400",
+              "margin_bottom": 20,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 16,
+              "mobail_line_height": 24,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "button_X78YBd": {
+            "type": "button",
+            "settings": {
+              "btnlink": "#",
+              "btntext": "Convert Faster Now",
+              "text_align": "center",
+              "padding": "10px 45px",
+              "font_size": 18,
+              "font_weight": "500",
+              "border_width": 1,
+              "border_radius": 30,
+              "border_style": "solid",
+              "margin_bottom": 0,
+              "mobail_text_align": "center",
+              "mobail_padding": "10px 30px",
+              "mobaile_font_size": 17,
+              "mobail_margin_bottom": 0,
+              "text_color": "#ffffff",
+              "btn_color": "#4ea2b2",
+              "border_color": "#4ea2b2",
+              "btn_text_hover": "#ffffff",
+              "btn_color_hover": "#f37527",
+              "border_color_hover": "#f37527"
+            }
+          }
+        },
+        "block_order": [
+          "scroll_img_aLCp7c",
+          "title_qjC3AW",
+          "title_W9FncW",
+          "richtext_BR9Twq",
+          "button_X78YBd"
+        ],
+        "settings": {
+          "section_height": "",
+          "bgcolor": "#1a1a1a",
+          "laptop_top": 150,
+          "laptop_bottom": 112,
+          "mobail_top": 64,
+          "mobail_bottom": 64,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_section_T4bmjP": {
+        "type": "shopc-section",
+        "blocks": {
+          "title_JDLwza": {
+            "type": "title",
+            "settings": {
+              "title": "ShopLandingAI success stories",
+              "textcolor": "#ffffff",
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 20,
+              "line_height": 26,
+              "font_weight": "500",
+              "margin_bottom": 0,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 18,
+              "mobail_line_height": 21,
+              "mobail_margin_bottom": 8
+            }
+          }
+        },
+        "block_order": [
+          "title_JDLwza"
+        ],
+        "settings": {
+          "bgcolor": "#252525",
+          "laptop_top": 50,
+          "laptop_bottom": 0,
+          "mobail_top": 30,
+          "mobail_bottom": 1,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_image_slider_wJ8Qpi": {
+        "type": "shopc-image-slider",
+        "blocks": {
+          "logoslider_UJfCpP": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-ce776742-ced5-4686-8455-526f7ae171c1.gif",
+              "url": ""
+            }
+          },
+          "logoslider_DBEDQf": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/480089164709102389-550ccfbc-3c87-49fc-bd15-fcae4ac3f043.webp",
+              "url": ""
+            }
+          },
+          "logoslider_nbdAWR": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-9a76d59b-b5a6-4065-af2a-5859e304beec.webp",
+              "url": ""
+            }
+          },
+          "logoslider_adCjPN": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/corefirst-logo-white-03.webp",
+              "url": ""
+            }
+          },
+          "logoslider_mtQkzE": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-c2001977-1340-4789-8d0d-6968291c95eb.webp",
+              "url": ""
+            }
+          },
+          "logoslider_aRCBpx": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-ffb26763-9ea5-48be-ad00-9ab662f01fd3.webp",
+              "url": ""
+            }
+          },
+          "logoslider_CgArzq": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-5d718227-af78-4d73-a0dd-970f26c1f041_3fc87bf7-3917-4bdb-8140-b4f50ef9132f.svg",
+              "url": ""
+            }
+          },
+          "logoslider_iGpfJe": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-f5e98ac7-c0c4-4034-b59c-36191b33b874_741c51df-a285-4b43-9185-65ba3e79849c.svg",
+              "url": ""
+            }
+          },
+          "logoslider_Difcf4": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-f9c7085d-4649-43c2-9fe4-ce5d3550b8ea_111450de-cd2d-4c09-8a2e-76e978bdcb9d.svg",
+              "url": ""
+            }
+          },
+          "logoslider_HbkjWK": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-ffb26763-9ea5-48be-ad00-9ab662f01fd3.png",
+              "url": ""
+            }
+          },
+          "logoslider_zWjNFF": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-d6f99bb1-0cf7-45be-9062-18d98d30ddfe.svg",
+              "url": ""
+            }
+          },
+          "logoslider_yzexQf": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-3fbe69c3-787a-49c5-98a0-54f119caaea0.png",
+              "url": ""
+            }
+          },
+          "logoslider_JLWkE8": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-3823fc4e-d4c5-422a-9dfb-a9d7010eaad1_03216992-36af-43db-b2f0-4c3de9aaec8c.svg",
+              "url": ""
+            }
+          },
+          "logoslider_ajzrUW": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-c2001977-1340-4789-8d0d-6968291c95eb.png",
+              "url": ""
+            }
+          },
+          "logoslider_tRxMnH": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-35b12cc2-a200-49a8-b20f-40c64b305c70.svg",
+              "url": ""
+            }
+          },
+          "logoslider_qRUrjq": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/corefirst-logo-white-03.png",
+              "url": ""
+            }
+          },
+          "logoslider_kriiRa": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/pikewhite_200x_4b4ea232-dd08-46dc-9e65-b10ea80d08b8.png",
+              "url": ""
+            }
+          },
+          "logoslider_BTnymL": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Valari-Logos__Final-04_1_256x_a02db156-250d-46c5-b8b4-b42a316673a5.png",
+              "url": ""
+            }
+          },
+          "logoslider_xw8Bfh": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-3f3c8f97-664b-4503-acc8-7273017df7d4.png",
+              "url": ""
+            }
+          },
+          "logoslider_WindTX": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-eac93e50-5850-4434-9ed4-56310cc391bc_080f96f7-1093-479b-a54e-0f5be60c2f40.svg",
+              "url": ""
+            }
+          },
+          "logoslider_FNEwJM": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-1455838e-27a6-4c9d-b8b6-92116f8144d2.png",
+              "url": ""
+            }
+          },
+          "logoslider_mqtGjQ": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Bevis_Gear_White_Logo.png",
+              "url": ""
+            }
+          },
+          "logoslider_rnGKhT": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-533586ae-ca8f-4323-8906-d28baf5dcfb6.png",
+              "url": ""
+            }
+          },
+          "logoslider_3myGAV": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-ba99bce5-0219-46e2-b715-c741fa5135cc.png",
+              "url": ""
+            }
+          },
+          "logoslider_AhTGML": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-db9c0022-365d-4a1a-950b-307f1f875785_b3961268-e579-420d-881d-2ee6cd9259ea.svg",
+              "url": ""
+            }
+          },
+          "logoslider_P9ipXD": {
+            "type": "logoslider",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/472241699419063450-24e98a3e-b471-4925-8625-dd7dbcb2df49_0ae237d6-d2d4-497c-b837-f3b61a673eb2.jpg",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "logoslider_UJfCpP",
+          "logoslider_DBEDQf",
+          "logoslider_nbdAWR",
+          "logoslider_adCjPN",
+          "logoslider_mtQkzE",
+          "logoslider_aRCBpx",
+          "logoslider_CgArzq",
+          "logoslider_iGpfJe",
+          "logoslider_Difcf4",
+          "logoslider_HbkjWK",
+          "logoslider_zWjNFF",
+          "logoslider_yzexQf",
+          "logoslider_JLWkE8",
+          "logoslider_ajzrUW",
+          "logoslider_tRxMnH",
+          "logoslider_qRUrjq",
+          "logoslider_kriiRa",
+          "logoslider_BTnymL",
+          "logoslider_xw8Bfh",
+          "logoslider_WindTX",
+          "logoslider_FNEwJM",
+          "logoslider_mqtGjQ",
+          "logoslider_rnGKhT",
+          "logoslider_3myGAV",
+          "logoslider_AhTGML",
+          "logoslider_P9ipXD"
+        ],
+        "settings": {
+          "title": "",
+          "logo_width": 135,
+          "aspect_ratio": "1\/1",
+          "objectfit": "contain",
+          "imageradius": 0,
+          "scrolling": true,
+          "justifycenter": false,
+          "scroll_speed": 10,
+          "padding": "1px",
+          "bg": "#252525",
+          "textColor": "#252525"
+        }
+      },
+      "shopc_about_us_dGjQjn": {
+        "type": "shopc-about-us",
+        "blocks": {
+          "image_JAcG7b": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/DY-X-1_400x400_b467188d-925a-40dc-9b5b-dbd88e44d4dd.jpg",
+              "aspect_ratio": "1\/1",
+              "object_fit": "cover",
+              "border_px": "%",
+              "border_radius": 0
+            }
+          },
+          "icon_6F7F8J": {
+            "type": "icon",
+            "settings": {
+              "iconwidth": 60,
+              "iconmargin": 10
+            }
+          },
+          "title_wWKMna": {
+            "type": "title",
+            "settings": {
+              "title": "The EngageAI Solution",
+              "textcolor": "#000000",
+              "font_size": 37,
+              "line_height": 44,
+              "font_weight": "500",
+              "margin_bottom": 48,
+              "mobail_font_size": 24,
+              "mobail_line_height": 32,
+              "mobail_margin_bottom": 48
+            }
+          },
+          "richtext_wfzBnt": {
+            "type": "richtext",
+            "settings": {
+              "text": "<ul><li>Interactive, Data-Based Quizzes<\/li><li>Personalized Landing Pages<\/li><li>Iterative Persona Development Based on Live Data<\/li><\/ul>",
+              "textcolor": "#000000",
+              "font_size": 18,
+              "line_height": 27,
+              "font_weight": "400",
+              "margin_bottom": 40,
+              "mobail_font_size": 16,
+              "mobail_line_height": 24,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "button_zzW7ij": {
+            "type": "button",
+            "settings": {
+              "btnlink": "#",
+              "btntext": "Shop Now",
+              "padding": "10px 45px",
+              "font_size": 18,
+              "font_weight": "500",
+              "border_width": 1,
+              "border_radius": 30,
+              "border_style": "solid",
+              "margin_bottom": 0,
+              "mobail_padding": "10px 30px",
+              "mobaile_font_size": 17,
+              "mobail_margin_bottom": 0,
+              "text_color": "#ffffff",
+              "btn_color": "#4ea2b2",
+              "border_color": "#4ea2b2",
+              "btn_text_hover": "#ffffff",
+              "btn_color_hover": "#f37527",
+              "border_color_hover": "#f37527"
+            }
+          }
+        },
+        "block_order": [
+          "image_JAcG7b",
+          "icon_6F7F8J",
+          "title_wWKMna",
+          "richtext_wfzBnt",
+          "button_zzW7ij"
+        ],
+        "settings": {
+          "flexdirection": "row",
+          "mobail_flexdirection": "column-reverse",
+          "aling": "center",
+          "bgcolor": "#ffffff",
+          "laptop_top": 50,
+          "laptop_bottom": 50,
+          "mobail_top": 30,
+          "mobail_bottom": 30,
+          "border_width": "0px 0px 1px 0px",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_about_us_Eg9UQ8": {
+        "type": "shopc-about-us",
+        "blocks": {
+          "image_xVYjpE": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/472241699419063450-cdc16586-f8a7-4752-a4ff-7f3411d99211.webp",
+              "aspect_ratio": "",
+              "object_fit": "fill",
+              "border_px": "px",
+              "border_radius": 0
+            }
+          },
+          "icon_giYMaJ": {
+            "type": "icon",
+            "settings": {
+              "img_icon": "shopify:\/\/shop_images\/472241699419063450-7b18732f-5448-418a-b4b0-60692c5b87fb.png",
+              "iconwidth": 60,
+              "iconmargin": 10
+            }
+          },
+          "title_yrEn7g": {
+            "type": "title",
+            "settings": {
+              "title": "Customers Love ShopLandingAI ",
+              "textcolor": "#000000",
+              "font_size": 37,
+              "line_height": 44,
+              "font_weight": "500",
+              "margin_bottom": 48,
+              "mobail_font_size": 24,
+              "mobail_line_height": 32,
+              "mobail_margin_bottom": 48
+            }
+          },
+          "richtext_ixjCAx": {
+            "type": "richtext",
+            "settings": {
+              "text": "<ul><li>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/li><li>Benefit from UX researcher-led interviews for deeper insights into audience segments, aiding in the creation of effective marketing strategies.<\/li><li>Enjoy tailored messaging for identified audience segments to dramatically improve engagement and conversions.<\/li><\/ul>",
+              "textcolor": "#000000",
+              "font_size": 18,
+              "line_height": 27,
+              "font_weight": "500",
+              "margin_bottom": 40,
+              "mobail_font_size": 16,
+              "mobail_line_height": 24,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "button_tnVBW9": {
+            "type": "button",
+            "settings": {
+              "btnlink": "#",
+              "btntext": "Shop Now",
+              "padding": "10px 45px",
+              "font_size": 18,
+              "font_weight": "500",
+              "border_width": 1,
+              "border_radius": 30,
+              "border_style": "solid",
+              "margin_bottom": 0,
+              "mobail_padding": "10px 30px",
+              "mobaile_font_size": 17,
+              "mobail_margin_bottom": 0,
+              "text_color": "#ffffff",
+              "btn_color": "#4ea2b2",
+              "border_color": "#4ea2b2",
+              "btn_text_hover": "#ffffff",
+              "btn_color_hover": "#f37527",
+              "border_color_hover": "#f37527"
+            }
+          }
+        },
+        "block_order": [
+          "image_xVYjpE",
+          "icon_giYMaJ",
+          "title_yrEn7g",
+          "richtext_ixjCAx",
+          "button_tnVBW9"
+        ],
+        "disabled": true,
+        "settings": {
+          "flexdirection": "row-reverse",
+          "mobail_flexdirection": "column-reverse",
+          "aling": "center",
+          "bgcolor": "#ffffff",
+          "laptop_top": 50,
+          "laptop_bottom": 50,
+          "mobail_top": 30,
+          "mobail_bottom": 64,
+          "border_width": "0px 0px 1px 0px",
+          "border_color": "#000000",
+          "border_style": "solid"
+        }
+      },
+      "shopc_about_us_iXa8Fy": {
+        "type": "shopc-about-us",
+        "blocks": {
+          "image_nmBnyN": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/472241699419063450-2d3e31ad-95b2-4d59-b876-4a0376da03f0.png",
+              "aspect_ratio": "",
+              "object_fit": "fill",
+              "border_px": "px",
+              "border_radius": 0
+            }
+          },
+          "icon_je8gQJ": {
+            "type": "icon",
+            "settings": {
+              "img_icon": "shopify:\/\/shop_images\/pony-logo.png",
+              "iconwidth": 80,
+              "iconmargin": 10
+            }
+          },
+          "title_Wa3hfc": {
+            "type": "title",
+            "settings": {
+              "title": "Brands & agencies love ShopLandingAI",
+              "textcolor": "#000000",
+              "font_size": 37,
+              "line_height": 44,
+              "font_weight": "500",
+              "margin_bottom": 48,
+              "mobail_font_size": 24,
+              "mobail_line_height": 32,
+              "mobail_margin_bottom": 48
+            }
+          },
+          "richtext_PtJGg4": {
+            "type": "richtext",
+            "settings": {
+              "text": "<p>Your potential customers expect your brand's first impression to be relevant to their needs–it can make them buy or bounce. QuizConvert creates personalized customer journeys.<\/p>",
+              "textcolor": "#000000",
+              "font_size": 18,
+              "line_height": 27,
+              "font_weight": "400",
+              "margin_bottom": 40,
+              "mobail_font_size": 16,
+              "mobail_line_height": 24,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "button_TmbTC6": {
+            "type": "button",
+            "settings": {
+              "btnlink": "#",
+              "btntext": "Shop Now",
+              "padding": "10px 45px",
+              "font_size": 18,
+              "font_weight": "500",
+              "border_width": 1,
+              "border_radius": 30,
+              "border_style": "solid",
+              "margin_bottom": 0,
+              "mobail_padding": "10px 30px",
+              "mobaile_font_size": 17,
+              "mobail_margin_bottom": 0,
+              "text_color": "#ffffff",
+              "btn_color": "#4ea2b2",
+              "border_color": "#4ea2b2",
+              "btn_text_hover": "#ffffff",
+              "btn_color_hover": "#f37527",
+              "border_color_hover": "#f37527"
+            }
+          }
+        },
+        "block_order": [
+          "image_nmBnyN",
+          "icon_je8gQJ",
+          "title_Wa3hfc",
+          "richtext_PtJGg4",
+          "button_TmbTC6"
+        ],
+        "disabled": true,
+        "settings": {
+          "flexdirection": "row",
+          "mobail_flexdirection": "column-reverse",
+          "aling": "center",
+          "bgcolor": "#ffffff",
+          "laptop_top": 50,
+          "laptop_bottom": 50,
+          "mobail_top": 30,
+          "mobail_bottom": 30,
+          "border_width": "0",
+          "border_color": "#000000",
+          "border_style": "solid"
+        }
+      },
+      "shopc_image_box_hmfajK": {
+        "type": "shopc-image-box",
+        "blocks": {
+          "title_dJLah8": {
+            "type": "title",
+            "settings": {
+              "title": "120% Increase in Add to Carts for WalkeePaws",
+              "textcolor": "#000000",
+              "text_align": "center",
+              "width": 60,
+              "align_content": "0px auto",
+              "font_size": 50,
+              "line_height": 60,
+              "font_weight": "500",
+              "margin_bottom": 8,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 22,
+              "mobail_line_height": 32,
+              "mobail_margin_bottom": 8
+            }
+          },
+          "richtext_j93H6i": {
+            "type": "richtext",
+            "settings": {
+              "text": "<p>ShopLandingAI created a landing page that showcased the lifestyle benefits of the product. <\/p>",
+              "textcolor": "#000000",
+              "text_align": "center",
+              "width": 46,
+              "align_content": "0px auto",
+              "font_size": 18,
+              "line_height": 27,
+              "font_weight": "400",
+              "margin_bottom": 20,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 16,
+              "mobail_line_height": 24,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "style_Di3XMK": {
+            "type": "style",
+            "settings": {
+              "text_align": "center",
+              "bgcolor": "#1a1a1a",
+              "padding": 40,
+              "gap": 10,
+              "border_radius": 6,
+              "title_font_size": 50,
+              "title_line_height": 60,
+              "title_font_weight": "500",
+              "title_margin_bottom": 0,
+              "title_text_color": "#d5a354",
+              "text_font_size": 16,
+              "text_line_height": 24,
+              "text_font_weight": "400",
+              "text_margin_bottom": 16,
+              "text_color": "#efefef",
+              "img_aspect_ratio": "1\/1",
+              "img_object_fit": "contain",
+              "img_border_px": "px",
+              "img_border_radius": 0,
+              "img_margin_bottom": 10,
+              "btn_padding": "0",
+              "btn_font_size": 16,
+              "btn_font_weight": "400",
+              "btn_border_width": 0,
+              "btn_border_radius": 0,
+              "btn_border_style": "solid",
+              "btn_margin_bottom": 0,
+              "btn_text_color": "#ffffff",
+              "btn_color": "rgba(0,0,0,0)",
+              "btn_border_color": "rgba(0,0,0,0)",
+              "btn_text_hover": "#f37527",
+              "btn_color_hover": "rgba(0,0,0,0)",
+              "btn_border_color_hover": "rgba(0,0,0,0)"
+            }
+          },
+          "mobail_style_HANKKK": {
+            "type": "mobail_style",
+            "settings": {
+              "text_align": "center",
+              "padding": 30,
+              "gap": 10,
+              "border_radius": 6,
+              "title_font_size": 30,
+              "title_line_height": 38,
+              "title_font_weight": "600",
+              "title_margin_bottom": 0,
+              "text_font_size": 15,
+              "text_line_height": 20,
+              "text_font_weight": "400",
+              "text_margin_bottom": 10,
+              "img_aspect_ratio": "1\/1",
+              "img_object_fit": "contain",
+              "img_border_px": "px",
+              "img_border_radius": 0,
+              "img_margin_bottom": 10,
+              "btn_padding": "10px 45px",
+              "btn_font_size": 15,
+              "btn_font_weight": "500",
+              "btn_border_width": 0,
+              "btn_border_radius": 0,
+              "btn_margin_bottom": 0
+            }
+          },
+          "box_bENwXN": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "img": "shopify:\/\/shop_images\/472241699419063450-905d007b-063c-4afa-858e-c217ffb4e05e_405f3fb4-4cad-4f01-bb70-040a2a52f976.png",
+              "title": "1.6k",
+              "text": "<p>customer data to discover new<\/p>",
+              "btnlink": "#",
+              "btntext": "Read More"
+            }
+          },
+          "box_EaPGzz": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "img": "shopify:\/\/shop_images\/472241699419063450-2d3e31ad-95b2-4d59-b876-4a0376da03f0.png",
+              "title": "7k",
+              "text": "<p>valuable audience groups.<\/p>",
+              "btnlink": "#",
+              "btntext": "Read More"
+            }
+          },
+          "box_bhJD78": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "img": "shopify:\/\/shop_images\/472241699419063450-3fff34e0-0129-46b1-8ea5-a56695c7d2d3.png",
+              "title": "10k",
+              "text": "<p>Get AI-powered analysis of <\/p>",
+              "btnlink": "#",
+              "btntext": "Read More"
+            }
+          }
+        },
+        "block_order": [
+          "title_dJLah8",
+          "richtext_j93H6i",
+          "style_Di3XMK",
+          "mobail_style_HANKKK",
+          "box_bENwXN",
+          "box_EaPGzz",
+          "box_bhJD78"
+        ],
+        "settings": {
+          "bgcolor": "#ffffff",
+          "laptop_top": 60,
+          "laptop_bottom": 60,
+          "mobail_top": 30,
+          "mobail_bottom": 30,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_image_box_j83N7K": {
+        "type": "shopc-image-box",
+        "blocks": {
+          "style_mngHJ3": {
+            "type": "style",
+            "settings": {
+              "text_align": "center",
+              "bgcolor": "#efefef",
+              "padding": 40,
+              "gap": 10,
+              "border_radius": 6,
+              "title_font_size": 19,
+              "title_line_height": 27,
+              "title_font_weight": "500",
+              "title_margin_bottom": 20,
+              "title_text_color": "#000000",
+              "text_font_size": 16,
+              "text_line_height": 24,
+              "text_font_weight": "400",
+              "text_margin_bottom": 20,
+              "text_color": "#000000",
+              "img_aspect_ratio": "1\/1",
+              "img_object_fit": "contain",
+              "img_border_px": "px",
+              "img_border_radius": 0,
+              "img_margin_bottom": 0,
+              "btn_padding": "10px 45px",
+              "btn_font_size": 18,
+              "btn_font_weight": "500",
+              "btn_border_width": 1,
+              "btn_border_radius": 30,
+              "btn_border_style": "solid",
+              "btn_margin_bottom": 0,
+              "btn_text_color": "#ffffff",
+              "btn_color": "#4ea2b2",
+              "btn_border_color": "#4ea2b2",
+              "btn_text_hover": "#ffffff",
+              "btn_color_hover": "#f37527",
+              "btn_border_color_hover": "#f37527"
+            }
+          },
+          "mobail_style_EAYbAW": {
+            "type": "mobail_style",
+            "settings": {
+              "text_align": "center",
+              "padding": 30,
+              "gap": 10,
+              "border_radius": 6,
+              "title_font_size": 18,
+              "title_line_height": 20,
+              "title_font_weight": "500",
+              "title_margin_bottom": 5,
+              "text_font_size": 14,
+              "text_line_height": 20,
+              "text_font_weight": "400",
+              "text_margin_bottom": 10,
+              "img_aspect_ratio": "1\/1",
+              "img_object_fit": "contain",
+              "img_border_px": "px",
+              "img_border_radius": 0,
+              "img_margin_bottom": 0,
+              "btn_padding": "10px 45px",
+              "btn_font_size": 0,
+              "btn_font_weight": "500",
+              "btn_border_width": 1,
+              "btn_border_radius": 30,
+              "btn_margin_bottom": 0
+            }
+          },
+          "title_qFx9NH": {
+            "type": "title",
+            "settings": {
+              "title": "Depth for Project: Life",
+              "textcolor": "#000000",
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 50,
+              "line_height": 60,
+              "font_weight": "500",
+              "margin_bottom": 8,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 22,
+              "mobail_line_height": 28,
+              "mobail_margin_bottom": 8
+            }
+          },
+          "richtext_dhzgtH": {
+            "type": "richtext",
+            "settings": {
+              "text": "<p>Fertility company with 40 years of experience and  success rate with clients had very poor conversions. <\/p>",
+              "textcolor": "#000000",
+              "text_align": "center",
+              "width": 50,
+              "align_content": "0px auto",
+              "font_size": 18,
+              "line_height": 27,
+              "font_weight": "400",
+              "margin_bottom": 20,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto",
+              "mobail_font_size": 16,
+              "mobail_line_height": 20,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "box_i47MRU": {
+            "type": "box",
+            "settings": {
+              "width": "50%",
+              "img": "shopify:\/\/shop_images\/472241699419063450-3ba20f1f-912e-4a3b-ab23-79f3d88201c0_0745a70d-1569-41a6-a7e6-30dad79a08c4.png",
+              "title": "Customers Love ShopLandingAI",
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "btnlink": "",
+              "btntext": "Shop Now"
+            }
+          },
+          "box_mbJQd9": {
+            "type": "box",
+            "settings": {
+              "width": "50%",
+              "img": "shopify:\/\/shop_images\/472241699419063450-0f925da5-2cb4-41e6-a6b6-ceb0c3021bd2_efe2e1fd-12cb-48b7-934c-ee447d5afbe9.png",
+              "title": "Customers Love ShopLandingAI",
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "btnlink": "",
+              "btntext": "Shop Now"
+            }
+          },
+          "box_NWXjwd": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "img": "shopify:\/\/shop_images\/472241699419063450-baf5e589-315c-459b-a4b7-bd2b93983386_410e76b5-a48d-40b5-9ecf-032b7ad53f79.png",
+              "title": "Customers Love ShopLandingAI",
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "btnlink": "",
+              "btntext": "Shop Now"
+            }
+          },
+          "box_GzwPch": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "img": "shopify:\/\/shop_images\/472241699419063450-4dbb3d6d-d6df-47cf-9f4a-23f97430b5ab_b4ca6972-490a-42ec-9720-71a9709d163a.png",
+              "title": "Customers Love ShopLandingAI",
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "btnlink": "",
+              "btntext": "Shop Now"
+            }
+          },
+          "box_gCNHhw": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "img": "shopify:\/\/shop_images\/472241699419063450-3fff34e0-0129-46b1-8ea5-a56695c7d2d3.png",
+              "title": "Customers Love ShopLandingAI",
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "btnlink": "",
+              "btntext": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "style_mngHJ3",
+          "mobail_style_EAYbAW",
+          "title_qFx9NH",
+          "richtext_dhzgtH",
+          "box_i47MRU",
+          "box_mbJQd9",
+          "box_NWXjwd",
+          "box_GzwPch",
+          "box_gCNHhw"
+        ],
+        "settings": {
+          "bgcolor": "#ffffff",
+          "laptop_top": 60,
+          "laptop_bottom": 60,
+          "mobail_top": 30,
+          "mobail_bottom": 30,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_section_9Be7GQ": {
+        "type": "shopc-section",
+        "blocks": {
+          "title_HTJWi6": {
+            "type": "title",
+            "settings": {
+              "title": "The ShopLandingAI Solution",
+              "textcolor": "#f37527",
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 20,
+              "line_height": 28,
+              "font_weight": "500",
+              "margin_bottom": 8,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 16,
+              "mobail_line_height": 20,
+              "mobail_margin_bottom": 4
+            }
+          },
+          "title_EMigi3": {
+            "type": "title",
+            "settings": {
+              "title": "The ShopLandingAI Solution",
+              "textcolor": "#ffffff",
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 50,
+              "line_height": 60,
+              "font_weight": "500",
+              "margin_bottom": 40,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 29,
+              "mobail_line_height": 40,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "video_iUWjzF": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+              "video": "shopify:\/\/files\/videos\/Quiz Video.mp4",
+              "enable_video_looping": true,
+              "style": "width:70%;\nmargin: 0px auto;\ndisplay:block;",
+              "mobail_style": "width:100%;"
+            }
+          }
+        },
+        "block_order": [
+          "title_HTJWi6",
+          "title_EMigi3",
+          "video_iUWjzF"
+        ],
+        "settings": {
+          "bgcolor": "#1a1a1a",
+          "laptop_top": 112,
+          "laptop_bottom": 112,
+          "mobail_top": 64,
+          "mobail_bottom": 64,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_image_box_Cg9Fep": {
+        "type": "shopc-image-box",
+        "blocks": {
+          "title_cWNCLL": {
+            "type": "title",
+            "settings": {
+              "title": "The ShopLandingAI Solution",
+              "textcolor": "#000000",
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 50,
+              "line_height": 60,
+              "font_weight": "500",
+              "margin_bottom": 8,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 22,
+              "mobail_line_height": 28,
+              "mobail_margin_bottom": 8
+            }
+          },
+          "richtext_eLpEma": {
+            "type": "richtext",
+            "settings": {
+              "text": "<p>Bellzi wanted to connect with its audience on a deeper level<\/p>",
+              "textcolor": "#000000",
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 18,
+              "line_height": 27,
+              "font_weight": "400",
+              "margin_bottom": 20,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 16,
+              "mobail_line_height": 24,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "style_FqzQTy": {
+            "type": "style",
+            "settings": {
+              "text_align": "center",
+              "bgcolor": "#efefef",
+              "padding": 40,
+              "gap": 10,
+              "border_radius": 6,
+              "title_font_size": 19,
+              "title_line_height": 27,
+              "title_font_weight": "500",
+              "title_margin_bottom": 0,
+              "title_text_color": "#000000",
+              "text_font_size": 16,
+              "text_line_height": 24,
+              "text_font_weight": "400",
+              "text_margin_bottom": 20,
+              "text_color": "#000000",
+              "img_aspect_ratio": "2\/1.5",
+              "img_object_fit": "cover",
+              "img_border_px": "px",
+              "img_border_radius": 10,
+              "img_margin_bottom": 30,
+              "btn_padding": "10px 45px",
+              "btn_font_size": 15,
+              "btn_font_weight": "400",
+              "btn_border_width": 1,
+              "btn_border_radius": 0,
+              "btn_border_style": "solid",
+              "btn_margin_bottom": 0,
+              "btn_text_color": "#ffffff",
+              "btn_color": "#4ea2b2",
+              "btn_border_color": "#4ea2b2",
+              "btn_text_hover": "#ffffff",
+              "btn_color_hover": "#f37527",
+              "btn_border_color_hover": "#f37527"
+            }
+          },
+          "mobail_style_4WNGzj": {
+            "type": "mobail_style",
+            "settings": {
+              "text_align": "center",
+              "padding": 30,
+              "gap": 10,
+              "border_radius": 6,
+              "title_font_size": 19,
+              "title_line_height": 27,
+              "title_font_weight": "500",
+              "title_margin_bottom": 10,
+              "text_font_size": 15,
+              "text_line_height": 22,
+              "text_font_weight": "400",
+              "text_margin_bottom": 20,
+              "img_aspect_ratio": "2\/1.5",
+              "img_object_fit": "cover",
+              "img_border_px": "px",
+              "img_border_radius": 8,
+              "img_margin_bottom": 15,
+              "btn_padding": "10px 45px",
+              "btn_font_size": 16,
+              "btn_font_weight": "500",
+              "btn_border_width": 1,
+              "btn_border_radius": 30,
+              "btn_margin_bottom": 0
+            }
+          },
+          "box_zMwWWV": {
+            "type": "box",
+            "settings": {
+              "width": "50%",
+              "img": "shopify:\/\/shop_images\/DY-X-1_400x400_b467188d-925a-40dc-9b5b-dbd88e44d4dd.jpg",
+              "title": "Customers Love ShopLandingAI",
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "btnlink": "#",
+              "btntext": "Shop Now"
+            }
+          },
+          "box_6EA7bC": {
+            "type": "box",
+            "settings": {
+              "width": "50%",
+              "img": "shopify:\/\/shop_images\/RedCedarFeedersSlider.webp",
+              "title": "Customers Love ShopLandingAI",
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "btnlink": "#",
+              "btntext": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "title_cWNCLL",
+          "richtext_eLpEma",
+          "style_FqzQTy",
+          "mobail_style_4WNGzj",
+          "box_zMwWWV",
+          "box_6EA7bC"
+        ],
+        "disabled": true,
+        "settings": {
+          "bgcolor": "#ffffff",
+          "laptop_top": 60,
+          "laptop_bottom": 60,
+          "mobail_top": 30,
+          "mobail_bottom": 64,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_box_THVqqw": {
+        "type": "shopc-box",
+        "blocks": {
+          "title_EGCWBL": {
+            "type": "title",
+            "settings": {
+              "title": "ShopLanding",
+              "textcolor": "#000000",
+              "title_position": 0,
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 20,
+              "line_height": 26,
+              "font_weight": "500",
+              "margin_bottom": 8,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 16,
+              "mobail_line_height": 24,
+              "mobail_margin_bottom": 0
+            }
+          },
+          "title_ckpxcw": {
+            "type": "title",
+            "settings": {
+              "title": "The ShopLandingAI Solution",
+              "textcolor": "#000000",
+              "title_position": 0,
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 50,
+              "line_height": 60,
+              "font_weight": "500",
+              "margin_bottom": 30,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 26,
+              "mobail_line_height": 28,
+              "mobail_margin_bottom": 15
+            }
+          },
+          "style_aR9K6B": {
+            "type": "style",
+            "settings": {
+              "text_align": "left",
+              "bgcolor": "#efefef",
+              "padding": 0,
+              "gap": 10,
+              "border_radius": 6,
+              "margin": 30,
+              "text_margin": "0px 20px 0px 20px",
+              "title_font_size": 19,
+              "title_line_height": 27,
+              "title_font_weight": "500",
+              "title_margin_bottom": 20,
+              "title_text_color": "#000000",
+              "text_font_size": 16,
+              "text_line_height": 24,
+              "text_font_weight": "400",
+              "text_margin_bottom": 20,
+              "text_color": "#000000",
+              "img_aspect_ratio": "2\/1.5",
+              "img_object_fit": "cover",
+              "img_border_px": "px",
+              "img_border_radius": 0,
+              "img_margin_bottom": 10
+            }
+          },
+          "mobail_style_NBfncJ": {
+            "type": "mobail_style",
+            "settings": {
+              "text_align": "left",
+              "padding": 0,
+              "gap": 10,
+              "border_radius": 6,
+              "margin": 25,
+              "text_margin": "0px 20px 0px 20px",
+              "title_font_size": 16,
+              "title_line_height": 24,
+              "title_font_weight": "500",
+              "title_margin_bottom": 20,
+              "text_font_size": 16,
+              "text_line_height": 24,
+              "text_font_weight": "400",
+              "text_margin_bottom": 20,
+              "img_aspect_ratio": "2\/1.2",
+              "img_object_fit": "cover",
+              "img_border_px": "px",
+              "img_border_radius": 0,
+              "img_margin_bottom": 10
+            }
+          },
+          "box_gkBqWY": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "btnlink": "",
+              "img": "shopify:\/\/shop_images\/DY-X-1_400x400_b467188d-925a-40dc-9b5b-dbd88e44d4dd.jpg",
+              "position_image": 1,
+              "title": "Customers Love ShopLandingAI",
+              "position_title": 2,
+              "text": "",
+              "position_text": 2
+            }
+          },
+          "box_W7DPL8": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "btnlink": "",
+              "img": "shopify:\/\/shop_images\/472241699419063450-cdc16586-f8a7-4752-a4ff-7f3411d99211.webp",
+              "position_image": 1,
+              "title": "Customers Love ShopLandingAI",
+              "position_title": 2,
+              "text": "",
+              "position_text": 2
+            }
+          },
+          "box_i6DHKV": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "btnlink": "",
+              "img": "shopify:\/\/shop_images\/RedCedarFeedersSlider.webp",
+              "position_image": 1,
+              "title": "Customers Love ShopLandingAI",
+              "position_title": 2,
+              "text": "",
+              "position_text": 1
+            }
+          },
+          "box_jVmL4B": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "btnlink": "",
+              "img": "shopify:\/\/shop_images\/472241699419063450-2db6a296-1d2e-43a2-829a-078ccf2214d6.webp",
+              "position_image": 1,
+              "title": "Customers Love ShopLandingAI",
+              "position_title": 2,
+              "text": "",
+              "position_text": 2
+            }
+          },
+          "box_qbP3nA": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "btnlink": "",
+              "img": "shopify:\/\/shop_images\/472241699419063450-4dbb3d6d-d6df-47cf-9f4a-23f97430b5ab_24079355-9f8f-4f15-b81a-3eb2866d1861.png",
+              "position_image": 1,
+              "title": "Customers Love ShopLandingAI",
+              "position_title": 2,
+              "text": "",
+              "position_text": 2
+            }
+          },
+          "box_Nt3dwM": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "btnlink": "",
+              "img": "shopify:\/\/shop_images\/472241699419063450-5a109121-8e28-4221-a6e2-9f3673b51c7a.jpg",
+              "position_image": 1,
+              "title": "Customers Love ShopLandingAI",
+              "position_title": 2,
+              "text": "",
+              "position_text": 2
+            }
+          },
+          "button_FHLMqg": {
+            "type": "button",
+            "settings": {
+              "btnlink": "#",
+              "btntext": "Shop Now",
+              "btn_position": 1,
+              "text_align": "center",
+              "padding": "10px 45px",
+              "font_size": 18,
+              "font_weight": "500",
+              "border_width": 1,
+              "border_radius": 30,
+              "border_style": "solid",
+              "margin_bottom": 0,
+              "mobail_text_align": "center",
+              "mobail_padding": "10px 30px",
+              "mobaile_font_size": 16,
+              "mobail_margin_bottom": 0,
+              "text_color": "#ffffff",
+              "btn_color": "#4ea2b2",
+              "border_color": "#4ea2b2",
+              "btn_text_hover": "#ffffff",
+              "btn_color_hover": "#f37527",
+              "border_color_hover": "#f37527"
+            }
+          }
+        },
+        "block_order": [
+          "title_EGCWBL",
+          "title_ckpxcw",
+          "style_aR9K6B",
+          "mobail_style_NBfncJ",
+          "box_gkBqWY",
+          "box_W7DPL8",
+          "box_i6DHKV",
+          "box_jVmL4B",
+          "box_qbP3nA",
+          "box_Nt3dwM",
+          "button_FHLMqg"
+        ],
+        "settings": {
+          "bgcolor": "#ffffff",
+          "laptop_top": 112,
+          "laptop_bottom": 112,
+          "mobail_top": 64,
+          "mobail_bottom": 64,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_section_pREMpF": {
+        "type": "shopc-section",
+        "blocks": {
+          "title_WzXgLQ": {
+            "type": "title",
+            "settings": {
+              "title": "The ShopLandingAI Solution",
+              "textcolor": "#ffffff",
+              "text_align": "center",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 50,
+              "line_height": 60,
+              "font_weight": "500",
+              "margin_bottom": 8,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 22,
+              "mobail_line_height": 40,
+              "mobail_margin_bottom": 8
+            }
+          },
+          "richtext_DPEfea": {
+            "type": "richtext",
+            "settings": {
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "textcolor": "#ffffff",
+              "text_align": "center",
+              "width": 55,
+              "align_content": "0px auto",
+              "font_size": 18,
+              "line_height": 27,
+              "font_weight": "400",
+              "margin_bottom": 20,
+              "mobail_text_align": "center",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 15,
+              "mobail_line_height": 24,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "button_JFAdtG": {
+            "type": "button",
+            "settings": {
+              "btnlink": "#",
+              "btntext": "Shop Now",
+              "text_align": "center",
+              "padding": "10px 45px",
+              "font_size": 18,
+              "font_weight": "500",
+              "border_width": 1,
+              "border_radius": 30,
+              "border_style": "solid",
+              "margin_bottom": 0,
+              "mobail_text_align": "center",
+              "mobail_padding": "10px 30px",
+              "mobaile_font_size": 16,
+              "mobail_margin_bottom": 0,
+              "text_color": "#ffffff",
+              "btn_color": "#4ea2b2",
+              "border_color": "#4ea2b2",
+              "btn_text_hover": "#ffffff",
+              "btn_color_hover": "#f37527",
+              "border_color_hover": "#f37527"
+            }
+          },
+          "image_tN4Ykq": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/472241699419063450-0f925da5-2cb4-41e6-a6b6-ceb0c3021bd2_efe2e1fd-12cb-48b7-934c-ee447d5afbe9.png",
+              "width": "",
+              "margin_bottom": 0,
+              "mwidth": "",
+              "mmargin_bottom": 0,
+              "aspect_ratio": "1\/1",
+              "object_fit": "contain",
+              "border_px": "px",
+              "border_radius": 0
+            }
+          }
+        },
+        "block_order": [
+          "title_WzXgLQ",
+          "richtext_DPEfea",
+          "button_JFAdtG",
+          "image_tN4Ykq"
+        ],
+        "disabled": true,
+        "settings": {
+          "bgcolor": "#1a1a1a",
+          "laptop_top": 112,
+          "laptop_bottom": 0,
+          "mobail_top": 64,
+          "mobail_bottom": 0,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_slider_TjcVpa": {
+        "type": "shopc-slider",
+        "blocks": {
+          "title_UnC3T7": {
+            "type": "title",
+            "settings": {
+              "title": "What Can EngageAI Do for Your Brand",
+              "textcolor": "#000000",
+              "title_position": 0,
+              "text_align": "left",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 31,
+              "line_height": 50,
+              "font_weight": "500",
+              "margin_bottom": 32,
+              "mobail_text_align": "left",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 29,
+              "mobail_line_height": 40,
+              "mobail_margin_bottom": 8
+            }
+          },
+          "style_4kbjDr": {
+            "type": "style",
+            "settings": {
+              "slider_per_view": "1",
+              "gap": 20,
+              "margin_bottom": 0,
+              "align": "left",
+              "bgcolor": "rgba(0,0,0,0)",
+              "arrow_color": "#000000",
+              "padding": 0,
+              "margin": "",
+              "border_radius": 6,
+              "text_font_size": 26,
+              "text_line_height": 37,
+              "text_font_weight": "500",
+              "text_margin_bottom": 20,
+              "text_color": "#000000",
+              "name_font_size": 16,
+              "name_line_height": 24,
+              "name_font_weight": "500",
+              "name_margin_bottom": 0,
+              "name_color": "#000000",
+              "des_font_size": 16,
+              "des_line_height": 24,
+              "des_font_weight": "400",
+              "des_margin_bottom": 0,
+              "des_color": "#000000",
+              "img_aspect_ratio": "1\/1",
+              "img_object_fit": "cover",
+              "img_border_px": "px",
+              "img_border_radius": 8,
+              "profile_img_width": "80px",
+              "profile_img_aspect_ratio": "2\/1.5",
+              "profile_img_object_fit": "contain",
+              "profile_img_border_px": "px",
+              "profile_img_border_radius": 0,
+              "profile_img_margin_bottom": 18
+            }
+          },
+          "mobail_style_Fgza6R": {
+            "type": "mobail_style",
+            "settings": {
+              "slider_per_view": "1",
+              "gap": 20,
+              "margin_bottom": 0,
+              "align": "left",
+              "padding": 0,
+              "margin": "",
+              "border_radius": 6,
+              "text_font_size": 20,
+              "text_line_height": 25,
+              "text_font_weight": "500",
+              "text_margin_bottom": 20,
+              "name_font_size": 16,
+              "name_line_height": 24,
+              "name_font_weight": "500",
+              "name_margin_bottom": 0,
+              "des_font_size": 16,
+              "des_line_height": 24,
+              "des_font_weight": "400",
+              "des_margin_bottom": 0,
+              "img_aspect_ratio": "1\/1",
+              "img_object_fit": "cover",
+              "img_border_px": "px",
+              "img_border_radius": 8,
+              "profile_img_width": "80px",
+              "profile_img_aspect_ratio": "3\/1",
+              "profile_img_object_fit": "fill",
+              "profile_img_border_px": "px",
+              "profile_img_border_radius": 0,
+              "profile_img_margin_bottom": 26
+            }
+          },
+          "slider_HWyyYx": {
+            "type": "slider",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/472241699419063450-5a109121-8e28-4221-a6e2-9f3673b51c7a.jpg",
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "profile_img": "shopify:\/\/shop_images\/carriage_driving-logo.png",
+              "name": "Sierra Tishgars",
+              "des": "customer"
+            }
+          },
+          "slider_ApJkzr": {
+            "type": "slider",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/DY-X-1_400x400_b467188d-925a-40dc-9b5b-dbd88e44d4dd.jpg",
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "profile_img": "shopify:\/\/shop_images\/horse_rider_logo.png",
+              "name": "Sierra Tishgars",
+              "des": "customer"
+            }
+          },
+          "slider_aV4a8N": {
+            "type": "slider",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/472241699419063450-3fff34e0-0129-46b1-8ea5-a56695c7d2d3.png",
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "profile_img": "shopify:\/\/shop_images\/pony-logo.png",
+              "name": "Sierra Tishgars",
+              "des": "customer"
+            }
+          }
+        },
+        "block_order": [
+          "title_UnC3T7",
+          "style_4kbjDr",
+          "mobail_style_Fgza6R",
+          "slider_HWyyYx",
+          "slider_ApJkzr",
+          "slider_aV4a8N"
+        ],
+        "settings": {
+          "bgcolor": "#ffffff",
+          "laptop_top": 112,
+          "laptop_bottom": 112,
+          "mobail_top": 64,
+          "mobail_bottom": 64,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "zegsu-header-bar": {
+        "type": "apps",
+        "settings": {
+          "include_margins": true
+        }
+      },
+      "shopc_bordered_box_KrPHdh": {
+        "type": "shopc-bordered-box",
+        "blocks": {
+          "title_GFLrdW": {
+            "type": "title",
+            "settings": {
+              "title": "The ShopLandingAI Solution",
+              "textcolor": "#ffffff",
+              "text_align": "left",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 50,
+              "line_height": 60,
+              "font_weight": "500",
+              "margin_bottom": 8,
+              "mobail_text_align": "left",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 29,
+              "mobail_line_height": 40,
+              "mobail_margin_bottom": 8
+            }
+          },
+          "richtext_fbQ8Hr": {
+            "type": "richtext",
+            "settings": {
+              "text": "<p>Your potential customers expect your brand's first impression to be relevant to their needs–it can make them buy or bounce. ShopLandingAI creates personalized landing pages that match your ads.<\/p><p> <\/p><p>ShopLandingAI speeds up conversions by giving each customer the journey they need. <\/p>",
+              "textcolor": "#ffffff",
+              "text_align": "left",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 18,
+              "line_height": 27,
+              "font_weight": "500",
+              "margin_bottom": 20,
+              "mobail_text_align": "left",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 16,
+              "mobail_line_height": 24,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "style_ap9TXB": {
+            "type": "style",
+            "settings": {
+              "text_align": "left",
+              "bgcolor": "#0b0b0b",
+              "padding": 40,
+              "gap": 20,
+              "border_radius": 6,
+              "title_font_size": 31,
+              "title_line_height": 27,
+              "title_font_weight": "500",
+              "title_margin_bottom": 20,
+              "title_text_color": "#ffffff",
+              "text_font_size": 16,
+              "text_line_height": 24,
+              "text_font_weight": "400",
+              "text_margin_bottom": 20,
+              "text_color": "#ffffff",
+              "img_aspect_ratio": "",
+              "img_max_width": "200px",
+              "img_object_fit": "contain",
+              "img_border_px": "px",
+              "img_border_radius": 0,
+              "img_margin_bottom": 10,
+              "btn_padding": "10px 45px",
+              "btn_font_size": 18,
+              "btn_font_weight": "500",
+              "btn_border_width": 1,
+              "btn_border_radius": 30,
+              "btn_border_style": "solid",
+              "btn_margin_bottom": 0,
+              "btn_text_color": "#ffffff",
+              "btn_color": "#4ea2b2",
+              "btn_border_color": "#4ea2b2",
+              "btn_text_hover": "#ffffff",
+              "btn_color_hover": "#f37527",
+              "btn_border_color_hover": "#f37527"
+            }
+          },
+          "mobail_style_FhDFii": {
+            "type": "mobail_style",
+            "settings": {
+              "text_align": "left",
+              "padding": 40,
+              "gap": 20,
+              "border_radius": 6,
+              "title_font_size": 19,
+              "title_line_height": 27,
+              "title_font_weight": "500",
+              "title_margin_bottom": 20,
+              "text_font_size": 16,
+              "text_line_height": 24,
+              "text_font_weight": "400",
+              "text_margin_bottom": 20,
+              "img_aspect_ratio": "",
+              "img_max_width": "200px",
+              "img_object_fit": "fill",
+              "img_border_px": "px",
+              "img_border_radius": 0,
+              "img_margin_bottom": 10,
+              "btn_padding": "10px 45px",
+              "btn_font_size": 18,
+              "btn_font_weight": "500",
+              "btn_border_width": 1,
+              "btn_border_radius": 30,
+              "btn_margin_bottom": 0
+            }
+          },
+          "box_4RDQaj": {
+            "type": "box",
+            "settings": {
+              "width": "50%",
+              "img": "shopify:\/\/shop_images\/6453d60910e329523f5987e5_user.svg",
+              "title": "Turn browsers into buyers",
+              "text": "<p>Your potential customers expect your brand's first impression to be relevant to their needs–it can make them buy or bounce. ShopLandingAI creates personalized landing pages that match your ads.<\/p>",
+              "btnlink": "shopify:\/\/products\/healer-conversion-complete-3-month-subscription",
+              "btntext": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "title_GFLrdW",
+          "richtext_fbQ8Hr",
+          "style_ap9TXB",
+          "mobail_style_FhDFii",
+          "box_4RDQaj"
+        ],
+        "disabled": true,
+        "settings": {
+          "bgcolor": "#0b0b0b",
+          "laptop_top": 112,
+          "laptop_bottom": 112,
+          "mobail_top": 64,
+          "mobail_bottom": 64,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_contact_AKFPNz": {
+        "type": "shopc-contact",
+        "blocks": {
+          "title_zPGeLb": {
+            "type": "title",
+            "settings": {
+              "title": "The ShopLandingAI Solution",
+              "textcolor": "#ffffff",
+              "title_position": 0,
+              "text_align": "left",
+              "width": 100,
+              "align_content": "0px auto 0px 0px",
+              "font_size": 50,
+              "line_height": 60,
+              "font_weight": "500",
+              "margin_bottom": 8,
+              "mobail_text_align": "left",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 29,
+              "mobail_line_height": 40,
+              "mobail_margin_bottom": 25
+            }
+          },
+          "style_RNHH8A": {
+            "type": "style",
+            "settings": {
+              "text_align": "left",
+              "bgcolor": "rgba(0,0,0,0)",
+              "border_color": "#ffffff",
+              "padding": 30,
+              "gap": 10,
+              "border_radius": 6,
+              "margin": 0,
+              "border_width": 1,
+              "text_margin": "0px 0px 0px 0px",
+              "title_font_size": 30,
+              "title_line_height": 36,
+              "title_font_weight": "500",
+              "title_margin_bottom": 40,
+              "title_text_color": "#ffffff",
+              "text_font_size": 16,
+              "text_line_height": 24,
+              "text_font_weight": "400",
+              "text_margin_bottom": 0,
+              "text_color": "#ffffff",
+              "img_width": "32px",
+              "img_margin": "",
+              "img_aspect_ratio": "1\/1",
+              "img_object_fit": "contain",
+              "img_border_px": "px",
+              "img_border_radius": 0,
+              "img_margin_bottom": 30
+            }
+          },
+          "mobail_style_w89QL9": {
+            "type": "mobail_style",
+            "settings": {
+              "text_align": "left",
+              "padding": 25,
+              "gap": 10,
+              "border_radius": 6,
+              "margin": 0,
+              "text_margin": "0px 0px 0px 0px",
+              "title_font_size": 19,
+              "title_line_height": 27,
+              "title_font_weight": "500",
+              "title_margin_bottom": 25,
+              "text_font_size": 15,
+              "text_line_height": 20,
+              "text_font_weight": "400",
+              "text_margin_bottom": 0,
+              "img_aspect_ratio": "1.2\/1",
+              "img_object_fit": "fill",
+              "img_border_px": "px",
+              "img_border_radius": 0,
+              "img_margin_bottom": 20
+            }
+          },
+          "richtext_pH3cGW": {
+            "type": "richtext",
+            "settings": {
+              "text": "<p>Your potential customers expect your brand's first impression to be relevant to their needs–it can make them buy or bounce. ShopLandingAI creates personalized landing pages that match your ads.<\/p><p> <\/p><p>ShopLandingAI speeds up conversions by giving each customer the journey they need. <\/p>",
+              "text_position": 0,
+              "textcolor": "#ffffff",
+              "text_align": "left",
+              "width": 100,
+              "align_content": "0px 0px 0px auto",
+              "font_size": 18,
+              "line_height": 27,
+              "font_weight": "400",
+              "margin_bottom": 20,
+              "mobail_text_align": "left",
+              "mobail_width": 100,
+              "mobail_align_content": "0px auto 0px 0px",
+              "mobail_font_size": 14,
+              "mobail_line_height": 20,
+              "mobail_margin_bottom": 20
+            }
+          },
+          "button_idHHWA": {
+            "type": "button",
+            "settings": {
+              "btnlink": "#",
+              "btntext": "Shop Now",
+              "btn_position": 0,
+              "text_align": "left",
+              "padding": "0",
+              "font_size": 18,
+              "font_weight": "400",
+              "border_width": 1,
+              "border_radius": 30,
+              "border_style": "solid",
+              "margin_bottom": 50,
+              "mobile_text_align": "left",
+              "mobile_padding": "",
+              "mobile_font_size": 15,
+              "mobile_margin_bottom": 30,
+              "text_color": "#d5a354",
+              "btn_color": "rgba(0,0,0,0)",
+              "border_color": "rgba(0,0,0,0)",
+              "text_color_hover": "#f37527",
+              "btn_color_hover": "rgba(0,0,0,0)",
+              "border_color_hover": "rgba(0,0,0,0)"
+            }
+          },
+          "box_EVbyRQ": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "btnlink": "",
+              "img": "shopify:\/\/shop_images\/6453d60910e329523f5987e5_user.svg",
+              "position_image": 1,
+              "title": "Customers Love ShopLandingAI",
+              "position_title": 2,
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "position_text": 3
+            }
+          },
+          "box_xFDdND": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "btnlink": "",
+              "img": "shopify:\/\/shop_images\/6453d34cd32b57c9dba0e2b9_email.svg",
+              "position_image": 1,
+              "title": "Customers Love ShopLandingAI",
+              "position_title": 2,
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "position_text": 3
+            }
+          },
+          "box_cyhqEX": {
+            "type": "box",
+            "settings": {
+              "width": "33.33%",
+              "btnlink": "",
+              "img": "shopify:\/\/shop_images\/6453d396c3ca063695846685_retargeting.svg",
+              "position_image": 1,
+              "title": "Customers Love ShopLandingAI",
+              "position_title": 2,
+              "text": "<p>Get AI-powered analysis of customer data to discover new, valuable audience groups.<\/p>",
+              "position_text": 3
+            }
+          }
+        },
+        "block_order": [
+          "title_zPGeLb",
+          "style_RNHH8A",
+          "mobail_style_w89QL9",
+          "richtext_pH3cGW",
+          "button_idHHWA",
+          "box_EVbyRQ",
+          "box_xFDdND",
+          "box_cyhqEX"
+        ],
+        "settings": {
+          "bgcolor": "#252525",
+          "laptop_top": 112,
+          "laptop_bottom": 112,
+          "mobail_top": 64,
+          "mobail_bottom": 64,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      },
+      "shopc_video_QhzqQN": {
+        "type": "shopc-video",
+        "blocks": {
+          "video_3DBE9J": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+              "video": "shopify:\/\/files\/videos\/IMG_0395.MOV",
+              "enable_video_looping": false,
+              "style": "width:800px;\nheight: 500px;\nmargin:0px auto;",
+              "mobail_style": "width:90%;",
+              "img": "shopify:\/\/shop_images\/cover-image.image.jpg",
+              "width": "",
+              "mwidth": "",
+              "mmargin_bottom": 0,
+              "aspect_ratio": "2\/1.6",
+              "object_fit": "cover",
+              "border_color": "#2c332f",
+              "icon_color": "#ffffff"
+            }
+          },
+          "list_wYYQww": {
+            "type": "list",
+            "settings": {
+              "title": "Integrate",
+              "des": "Get AI-powered analysis of customer data to discover new, valuable audience groups.",
+              "color": "#51ff06"
+            }
+          },
+          "list_c7kpag": {
+            "type": "list",
+            "settings": {
+              "title": "Integrate",
+              "des": "Get AI-powered analysis of customer data to discover new, valuable audience groups.",
+              "color": "#ec1919"
+            }
+          },
+          "list_YTbixk": {
+            "type": "list",
+            "settings": {
+              "title": "Integrate",
+              "des": "Get AI-powered analysis of customer data to discover new, valuable audience groups.",
+              "color": "#0080ff"
+            }
+          },
+          "list_XQiLUw": {
+            "type": "list",
+            "settings": {
+              "title": "Integrate",
+              "des": "Get AI-powered analysis of customer data to discover new, valuable audience groups.",
+              "color": "#023d69"
+            }
+          }
+        },
+        "block_order": [
+          "video_3DBE9J",
+          "list_wYYQww",
+          "list_c7kpag",
+          "list_YTbixk",
+          "list_XQiLUw"
+        ],
+        "settings": {
+          "bgcolor": "#ffffff",
+          "laptop_top": 112,
+          "laptop_bottom": 112,
+          "laptop_gap": 20,
+          "mobail_top": 64,
+          "mobail_bottom": 64,
+          "mobail_gap": 20,
+          "border_width": "0",
+          "border_color": "#d9d9d9",
+          "border_style": "solid"
+        }
+      }
+    },
+    "order": [
+      "main",
+      "shopc_hero_banner_fNb3Pc",
+      "shopc_section_T4bmjP",
+      "shopc_image_slider_wJ8Qpi",
+      "shopc_about_us_dGjQjn",
+      "shopc_about_us_Eg9UQ8",
+      "shopc_about_us_iXa8Fy",
+      "shopc_image_box_hmfajK",
+      "shopc_image_box_j83N7K",
+      "shopc_section_9Be7GQ",
+      "shopc_image_box_Cg9Fep",
+      "shopc_box_THVqqw",
+      "shopc_section_pREMpF",
+      "shopc_slider_TjcVpa",
+      "zegsu-header-bar",
+      "shopc_bordered_box_KrPHdh",
+      "shopc_contact_AKFPNz",
+      "shopc_video_QhzqQN"
+    ]
+  }
+  
