@@ -1,0 +1,1 @@
+# shoplanding.ai-ShopCanal-page
